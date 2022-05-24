@@ -1,0 +1,33 @@
+{
+  "name": "personal.web.project",
+  "version": "2.0.0",
+  "description": "eportfolio",
+  "scripts": {
+    "compile:scss": "node-sass --watch sass/main.scss ./style.css",
+    "server": "live-server --browser=firefox",
+    "start": "npm-run-all --parallel server compile:scss",
+    "perfix": "postcss --use autoprefix css/style.css -o css/style.perfix.css",
+    "parcel:build": "parcel build index.html",
+    "parcel:watch": "parcel watch index.html"
+  },
+  "author": "James Coolidge",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.17.10",
+    "@babel/core": "^7.17.10",
+    "@babel/preset-env": "^7.17.10",
+    "autoprefix": "^1.0.1",
+    "autoprefixer": "^10.4.4",
+    "browserslist": "^4.20.0",
+    "node-sass": "^7.0.1",
+    "npm-run-all": "^4.1.5",
+    "parcel": "^2.4.0",
+    "postcss": "^8.4.8"
+  },
+  "dependencies": {
+    "animate.css": "^4.1.1",
+    "animejs": "^3.2.1",
+    "core-js": "^3.22.4",
+    "jquery": "^3.6.0"
+  }
+}
