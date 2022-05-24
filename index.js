@@ -7,7 +7,7 @@ import { body, wantsReducedMotion, respondWidth } from "./js/variables";
 import "./js/previewer";
 import "./js/toolTips";
 
-// window properties
+// Window properties
 let innerWidth = window.innerWidth;
 
 // navigation
