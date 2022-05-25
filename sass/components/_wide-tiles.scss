@@ -40,10 +40,17 @@
         display: block;
         flex: 0 0 4.2rem;
         margin-right: 1rem;
+        width: 4.2rem;
+        height: auto;
+        
+        .body--dark-mode & {
+            filter: brightness(150%) saturate(200%);
+        }
     }
 
+
     &__info {
-        padding: 2rem;
+        padding: 2rem 1rem;
 
         display: grid;
         grid-row-gap: 1rem;

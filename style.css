@@ -158,7 +158,8 @@ body .cursor::after {
   --shadow-big: 0 1rem 4rem rgba(42, 42, 42, .3);
   --shadow:  0 0 2rem rgba(42, 42, 42, .2);
   --shadow-small:  0 0 .5rem rgba(42, 42, 42, .4);
-  --shadow-light:  0 0 2rem rgba(42, 42, 42, .1); }
+  --shadow-light:  0 0 2rem rgba(42, 42, 42, .1);
+  --color-green: #18cc24; }
 
 html {
   box-sizing: border-box;
@@ -473,6 +474,8 @@ body {
     align-self: start; }
 
 .to-top {
+  border: none;
+  background-color: transparent;
   position: fixed;
   right: 1%;
   bottom: 1.7%;
@@ -542,7 +545,8 @@ body {
     text-align: center;
     padding: 1.8rem 0 4rem 0;
     line-height: 1.5;
-    font-size: 1.7rem; }
+    font-size: 1.7rem;
+    margin-bottom: auto; }
   .cards__card-night-mode {
     display: none; }
     .body--dark-mode .cards__card-night-mode {
@@ -686,7 +690,7 @@ body {
       display: block;
       width: 2.5rem;
       height: 2.5rem;
-      fill: #18cc24; }
+      fill: var(--color-green); }
     .tiles__tag-name {
       font-family: "Open Sans", sans-serif;
       font-size: 1.4rem;
@@ -730,9 +734,13 @@ body {
   .wide-tiles__img {
     display: block;
     flex: 0 0 4.2rem;
-    margin-right: 1rem; }
+    margin-right: 1rem;
+    width: 4.2rem;
+    height: auto; }
+    .body--dark-mode .wide-tiles__img {
+      filter: brightness(150%) saturate(200%); }
   .wide-tiles__info {
-    padding: 2rem;
+    padding: 2rem 1rem;
     display: grid;
     grid-row-gap: 1rem; }
   .wide-tiles__date, .wide-tiles__duration {
@@ -1640,6 +1648,7 @@ body {
 
 @media only screen and (max-width: 34.375em) {
   .home-header {
+    margin-top: 11rem;
     padding-bottom: 10rem;
     height: auto;
     justify-content: stretch;
@@ -1750,8 +1759,9 @@ body {
         display: block;
         padding-top: .3rem;
         padding-right: .5rem;
-        height: 3.1rem;
-        width: 3.1rem; }
+        height: 3.3rem;
+        width: 3.3rem;
+        fill: blue; }
     .edu-tiles__tile-name {
       font-size: 1.8rem;
       font-weight: 600;
@@ -1768,8 +1778,8 @@ body {
       .edu-tiles__tile-duration svg {
         display: block;
         padding-right: .6rem;
-        height: 2.9rem;
-        width: 2.9rem; }
+        height: 2.8rem;
+        width: 2.8rem; }
     .edu-tiles__tile-date {
       font-size: 1.7rem; }
     .edu-tiles__tile-list {
@@ -1827,7 +1837,7 @@ body {
   .learning__buttons {
     padding-top: 2rem;
     display: grid;
-    grid-template-columns: repeat(2, min-content); }
+    grid-template-columns: repeat(2, max-content); }
     @media only screen and (max-width: 34.375em) {
       .learning__buttons {
         padding-left: 2rem;

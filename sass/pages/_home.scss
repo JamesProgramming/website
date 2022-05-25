@@ -193,6 +193,7 @@
 
 @include respond($small) {
     .home-header {
+        margin-top: 11rem;
         padding-bottom: 10rem;
         height: auto;
         justify-content: stretch;
