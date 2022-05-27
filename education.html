@@ -82,10 +82,7 @@
         <div class="edu-tiles__text">
           <h2 class="heading-2">Academic</h2>
           <p class="paragraph paragraph--wide">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
-            dignissimos quia impedit fugiat quasi necessitatibus hic officia
-            quidem quas! Perferendis illum animi perspiciatis aperiam,
-            voluptate.
+            I start my higher education at olympic college in bremerton, washington. My origonal goal was to obtain a BS in Mechanical Engineering but I took a small class in web developement and the rest is history. Now, I am working on a BS in Computer Science.
           </p>
         </div>
         <div class="edu-tiles__container">
@@ -161,13 +158,13 @@
               course were complete on udemy.com.
             </p>
             <div class="learning__buttons">
-              <button class="button button--down-arrow">
+              <button class="button button--down-arrow" data-id="front-end-tiles">
                 <span>Front end</span>
                 <svg>
                   <use xlink:href="/img/svg/sprite.svg#icon-right-arrow"></use>
                 </svg>
               </button>
-              <button class="button button--down-arrow">
+              <button class="button button--down-arrow" data-id="back-end-tiles">
                 <span>Back end</span>
                 <svg>
                   <use xlink:href="/img/svg/sprite.svg#icon-right-arrow"></use>
@@ -175,14 +172,62 @@
               </button>
             </div>
           </header>
-          <div class="learning__spacing"></div>
+
+          <div id="back-end-tiles" class="learning__spacing"></div>
           <div class="tile-title">
             <div class="tile-title__text">
-              <h3 class="heading-3">Front End Course</h3>
+              <h3 class="heading-3">Back End Course</h3>
             </div>
             <div class="tile-title__line"></div>
             <div class="wide-tiles">
               <div class="wide-tiles__container">
+                <div class="wide-tiles__tile">
+                  <div class="wide-tiles__header">
+                    <img
+                      src="/img/python.png"
+                      alt="python"
+                      class="wide-tiles__img"
+                    />
+                    <h4 class="heading-4">
+                      Learn Python & Ethical Hacking From Scratch
+                    </h4>
+                  </div>
+                  <div class="wide-tiles__info">
+                    <div class="wide-tiles__date">
+                      <svg>
+                        <use
+                          xlink:href="/img/svg/sprite.svg#icon-cert-date-icon"
+                        ></use>
+                      </svg>
+                      <p>Sept 2021</p>
+                    </div>
+                    <div class="wide-tiles__duration">
+                      <svg>
+                        <use
+                          xlink:href="/img/svg/sprite.svg#icon-cert-duration-icon"
+                        ></use>
+                      </svg>
+                      <p>25 hr</p>
+                    </div>
+                  </div>
+                  <div class="wide-tiles__buttons">
+                    <a
+                      href="https://www.udemy.com/certificate/UC-95d6de29-1e48-48fb-b66c-1f2e88988954/"
+                      class="button button--underline"
+                      >View Certification<span></span
+                    ></a>
+                    <button
+                      class="button button--plus button--no-margin button--hidden"
+                    >
+                      Course work sample
+                      <span class="plus">
+                        <div class="plus__horizontal"></div>
+                        <div class="plus__vertical"></div>
+                      </span>
+                    </button>
+                  </div>
+                </div>
+
                 <div class="wide-tiles__tile">
                   <div class="wide-tiles__header">
                     <img
@@ -219,6 +264,89 @@
                       class="button button--underline"
                       >View Certification<span></span
                     ></a>
+                    <button class="button button--plus button--no-margin">
+                      Course work sample
+                      <span class="plus">
+                        <div class="plus__horizontal"></div>
+                        <div class="plus__vertical"></div>
+                      </span>
+                    </button>
+                  </div>
+                  <div class="wide-tiles__sub">
+                    <div class="wide-tiles__sub-tile">
+                      <div class="wide-tiles__sub-line"></div>
+                      <div class="wide-tiles__sub-img">
+                        <img src="/img/nodejs-course.png" alt="Natours" />
+                      </div>
+
+                      <div class="wide-tiles__sub-heading">
+                        <h5 class="heading-5">Natours</h5>
+                      </div>
+                      <div class="wide-tiles__sub-description">
+                        <h6 class="heading-6">
+                          Website backed with Node.js and MongoDB
+                        </h6>
+                        <a
+                          href="https://github.com/JamesProgramming/node-natours"
+                          class="a-button"
+                        >
+                          <span
+                            class="button button--narrow button--no-margin button--outline"
+                            >Source code</span
+                          >
+                        </a>
+                        <a
+                          href="https://natours-james-dev.herokuapp.com/"
+                          class="a-button"
+                        >
+                          <button
+                            class="button button--narrow button--no-margin"
+                          >
+                            <span>View</span>
+                          </button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="wide-tiles__container">
+                <div class="wide-tiles__tile">
+                  <div class="wide-tiles__header">
+                    <img
+                      src="/img/python.png"
+                      alt="python"
+                      class="wide-tiles__img"
+                    />
+                    <h4 class="heading-4">
+                      Learn Python Programming Masterclass
+                    </h4>
+                  </div>
+                  <div class="wide-tiles__info">
+                    <div class="wide-tiles__date">
+                      <svg>
+                        <use
+                          xlink:href="/img/svg/sprite.svg#icon-cert-date-icon"
+                        ></use>
+                      </svg>
+                      <p>Sept 2021</p>
+                    </div>
+                    <div class="wide-tiles__duration">
+                      <svg>
+                        <use
+                          xlink:href="/img/svg/sprite.svg#icon-cert-duration-icon"
+                        ></use>
+                      </svg>
+                      <p>67 hr</p>
+                    </div>
+                  </div>
+                  <div class="wide-tiles__buttons">
+                    <a
+                      href="https://www.udemy.com/certificate/UC-fe0bd91f-02b2-4645-a221-fb4c2948e8a5/"
+                      class="button button--underline"
+                      >View Certification<span></span
+                    ></a>
                     <button
                       class="button button--plus button--no-margin button--hidden"
                     >
@@ -230,6 +358,18 @@
                     </button>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="front-end-tiles" class="learning__spacing"></div>
+          <div class="tile-title">
+            <div class="tile-title__text">
+              <h3 class="heading-3">Front End Course</h3>
+            </div>
+            <div class="tile-title__line"></div>
+            <div class="wide-tiles">
+              <div class="wide-tiles__container">
 
                 <div class="wide-tiles__tile">
                   <div class="wide-tiles__header">
@@ -274,32 +414,59 @@
                       </span>
                     </button>
                   </div>
+
                   <div class="wide-tiles__sub">
                     <div class="wide-tiles__sub-tile">
                       <div class="wide-tiles__sub-line"></div>
                       <div class="wide-tiles__sub-img">
                         <img
-                          src="/img/work-course-1.png"
-                          alt="course webpage"
+                          src="/img/css-and-html-trillo.png"
+                          alt="Trillo website"
                         />
                       </div>
 
                       <div class="wide-tiles__sub-heading">
-                        <h5 class="heading-5">Natours</h5>
+                        <h5 class="heading-5">Trillo</h5>
                       </div>
                       <div class="wide-tiles__sub-description">
-                        <h6 class="heading-6">
-                          Website built with CSS Flex Technology
-                        </h6>
-                        <a href="#" class="a-button">
+                        <h6 class="heading-6">Website built with CSS Flex technology</h6>
+                        <a target="_blank" href="https://github.com/JamesProgramming/trillo" class="a-button">
                           <span
                             class="button button--narrow button--no-margin button--outline"
                             >Source code</span
                           >
                         </a>
-                        <button class="button button--narrow button--no-margin">
-                          View
+                        <a target="_blank" href="https://jamesprogramming.github.io/trillo/starter/" class="a-button"><button class="button button--narrow button--no-margin">
+                          <span>View</span>
                         </button>
+                        </a>
+                      </div>
+                    </div>
+                    
+                    <div class="wide-tiles__sub-tile">
+                      <div class="wide-tiles__sub-line"></div>
+                      <div class="wide-tiles__sub-img">
+                        <img
+                          src="/img/css-and-html-nexter.png"
+                          alt="Nexter website"
+                        />
+                      </div>
+
+                      <div class="wide-tiles__sub-heading">
+                        <h5 class="heading-5">Nexter</h5>
+                      </div>
+                      <div class="wide-tiles__sub-description">
+                        <h6 class="heading-6">Website built with CSS Grid technology</h6>
+                        <a target="_blank" href="https://github.com/JamesProgramming/nexter" class="a-button">
+                          <span
+                            class="button button--narrow button--no-margin button--outline"
+                            >Source code</span
+                          >
+                        </a>
+                        <a target="_blank" href="https://jamesprogramming.github.io/nexter/starter/" class="a-button"><button class="button button--narrow button--no-margin">
+                          <span>View</span>
+                        </button>
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -336,7 +503,7 @@
                     </div>
                   </div>
                   <div class="wide-tiles__buttons">
-                    <a href="#" class="button button--underline"
+                    <a target="_blank" href="#" class="button button--underline"
                       >View Certification<span></span
                     ></a>
                     <button class="button button--plus button--no-margin">
@@ -352,99 +519,27 @@
                       <div class="wide-tiles__sub-line"></div>
                       <div class="wide-tiles__sub-img">
                         <img
-                          src="/img/work-course-1.png"
-                          alt="course webpage"
+                          src="/img/javaScript-course.png"
+                          alt="Forkify website"
                         />
                       </div>
 
                       <div class="wide-tiles__sub-heading">
-                        <h5 class="heading-5">Natours</h5>
+                        <h5 class="heading-5">Forkify</h5>
                       </div>
                       <div class="wide-tiles__sub-description">
                         <h6 class="heading-6">
-                          Website built with CSS Flex Technology
+                          A modern JavaScript heavy website
                         </h6>
-                        <a href="#" class="a-button">
+                        <a target="_blank" href="#" class="a-button">
                           <span
                             class="button button--narrow button--no-margin button--outline open-previewer"
                             >Source code</span
                           >
                         </a>
-                        <button class="button button--narrow button--no-margin">
-                          View
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="wide-tiles__tile">
-                  <div class="wide-tiles__header">
-                    <img
-                      src="/img/python.png"
-                      alt="python"
-                      class="wide-tiles__img"
-                    />
-                    <h4 class="heading-4">
-                      Learn Python Programming Masterclass
-                    </h4>
-                  </div>
-                  <div class="wide-tiles__info">
-                    <div class="wide-tiles__date">
-                      <svg>
-                        <use
-                          xlink:href="/img/svg/sprite.svg#icon-cert-date-icon"
-                        ></use>
-                      </svg>
-                      <p>Sept 2021</p>
-                    </div>
-                    <div class="wide-tiles__duration">
-                      <svg>
-                        <use
-                          xlink:href="/img/svg/sprite.svg#icon-cert-duration-icon"
-                        ></use>
-                      </svg>
-                      <p>68 hr</p>
-                    </div>
-                  </div>
-                  <div class="wide-tiles__buttons">
-                    <a href="#" class="button button--underline"
-                      >View Certification<span></span
-                    ></a>
-                    <button class="button button--plus button--no-margin">
-                      Course work sample
-                      <span class="plus">
-                        <div class="plus__horizontal"></div>
-                        <div class="plus__vertical"></div>
-                      </span>
-                    </button>
-                  </div>
-                  <div class="wide-tiles__sub">
-                    <div class="wide-tiles__sub-tile">
-                      <div class="wide-tiles__sub-line"></div>
-                      <div class="wide-tiles__sub-img">
-                        <img
-                          src="/img/work-course-1.png"
-                          alt="course webpage"
-                        />
-                      </div>
-
-                      <div class="wide-tiles__sub-heading">
-                        <h5 class="heading-5">Natours</h5>
-                      </div>
-                      <div class="wide-tiles__sub-description">
-                        <h6 class="heading-6">
-                          Website built with CSS Flex Technology
-                        </h6>
-                        <a href="#" class="a-button">
-                          <span
-                            class="button button--narrow button--no-margin button--outline"
-                            >Source code</span
-                          >
-                        </a>
-                        <button class="button button--narrow button--no-margin">
-                          View
-                        </button>
+                        <a target="_blank" href="https://james-coolidge-js-forkify.netlify.app/" class="a-button"><button class="button button--narrow button--no-margin">
+                          <span>View</span>
+                        </a></button>
                       </div>
                     </div>
                   </div>
@@ -453,285 +548,6 @@
             </div>
           </div>
 
-          <div class="learning__spacing"></div>
-          <div class="tile-title">
-            <div class="tile-title__text">
-              <h3 class="heading-3">Back End Course</h3>
-            </div>
-            <div class="tile-title__line"></div>
-            <div class="wide-tiles">
-              <div class="wide-tiles__container">
-                <div class="wide-tiles__tile">
-                  <div class="wide-tiles__header">
-                    <img
-                      src="/img/node.js.png"
-                      alt="python"
-                      class="wide-tiles__img"
-                    />
-                    <h4 class="heading-4">
-                      Node.js, Express, MongoDB & More: The Complete Bootcamp
-                      2022
-                    </h4>
-                  </div>
-                  <div class="wide-tiles__info">
-                    <div class="wide-tiles__date">
-                      <svg>
-                        <use
-                          xlink:href="/img/svg/sprite.svg#icon-cert-date-icon"
-                        ></use>
-                      </svg>
-                      <p>April 2022</p>
-                    </div>
-                    <div class="wide-tiles__duration">
-                      <svg>
-                        <use
-                          xlink:href="/img/svg/sprite.svg#icon-cert-duration-icon"
-                        ></use>
-                      </svg>
-                      <p>42 hr</p>
-                    </div>
-                  </div>
-                  <div class="wide-tiles__buttons">
-                    <a
-                      href="https://www.udemy.com/certificate/UC-ce5bccb0-c504-4984-bc23-65d5209adc57/"
-                      class="button button--underline"
-                      >View Certification<span></span
-                    ></a>
-                    <button
-                      class="button button--plus button--no-margin button--hidden"
-                    >
-                      Course work sample
-                      <span class="plus">
-                        <div class="plus__horizontal"></div>
-                        <div class="plus__vertical"></div>
-                      </span>
-                    </button>
-                  </div>
-                </div>
-
-                <div class="wide-tiles__tile">
-                  <div class="wide-tiles__header">
-                    <img
-                      src="/img/python.png"
-                      alt="python"
-                      class="wide-tiles__img"
-                    />
-                    <h4 class="heading-4">
-                      Learn Python & Ethical Hacking From Scratch
-                    </h4>
-                  </div>
-                  <div class="wide-tiles__info">
-                    <div class="wide-tiles__date">
-                      <svg>
-                        <use
-                          xlink:href="/img/svg/sprite.svg#icon-cert-date-icon"
-                        ></use>
-                      </svg>
-                      <p>Sept 2021</p>
-                    </div>
-                    <div class="wide-tiles__duration">
-                      <svg>
-                        <use
-                          xlink:href="/img/svg/sprite.svg#icon-cert-duration-icon"
-                        ></use>
-                      </svg>
-                      <p>25 hr</p>
-                    </div>
-                  </div>
-                  <div class="wide-tiles__buttons">
-                    <a
-                      href="https://www.udemy.com/certificate/UC-95d6de29-1e48-48fb-b66c-1f2e88988954/"
-                      class="button button--underline"
-                      >View Certification<span></span
-                    ></a>
-                    <button class="button button--plus button--no-margin">
-                      Course work sample
-                      <span class="plus">
-                        <div class="plus__horizontal"></div>
-                        <div class="plus__vertical"></div>
-                      </span>
-                    </button>
-                  </div>
-                  <div class="wide-tiles__sub">
-                    <div class="wide-tiles__sub-tile">
-                      <div class="wide-tiles__sub-line"></div>
-                      <div class="wide-tiles__sub-img">
-                        <img
-                          src="/img/work-course-1.png"
-                          alt="course webpage"
-                        />
-                      </div>
-
-                      <div class="wide-tiles__sub-heading">
-                        <h5 class="heading-5">Natours</h5>
-                      </div>
-                      <div class="wide-tiles__sub-description">
-                        <h6 class="heading-6">
-                          Website built with CSS Flex Technology
-                        </h6>
-                        <a href="#" class="a-button">
-                          <span
-                            class="button button--narrow button--no-margin button--outline"
-                            >Source code</span
-                          >
-                        </a>
-                        <button class="button button--narrow button--no-margin">
-                          View
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="wide-tiles__container">
-                <div class="wide-tiles__tile">
-                  <div class="wide-tiles__header">
-                    <img
-                      src="/img/js.svg"
-                      alt="python"
-                      class="wide-tiles__img"
-                    />
-                    <h4 class="heading-4">
-                      The Complete JavaScript Course 2022: From Zero to Expert!
-                    </h4>
-                  </div>
-                  <div class="wide-tiles__info">
-                    <div class="wide-tiles__date">
-                      <svg>
-                        <use
-                          xlink:href="/img/svg/sprite.svg#icon-cert-date-icon"
-                        ></use>
-                      </svg>
-                      <p>Oct 2021</p>
-                    </div>
-                    <div class="wide-tiles__duration">
-                      <svg>
-                        <use
-                          xlink:href="/img/svg/sprite.svg#icon-cert-duration-icon"
-                        ></use>
-                      </svg>
-                      <p>68 hr</p>
-                    </div>
-                  </div>
-                  <div class="wide-tiles__buttons">
-                    <a href="#" class="button button--underline"
-                      >View Certification<span></span
-                    ></a>
-                    <button class="button button--plus button--no-margin">
-                      Course work sample
-                      <span class="plus">
-                        <div class="plus__horizontal"></div>
-                        <div class="plus__vertical"></div>
-                      </span>
-                    </button>
-                  </div>
-                  <div class="wide-tiles__sub">
-                    <div class="wide-tiles__sub-tile">
-                      <div class="wide-tiles__sub-line"></div>
-                      <div class="wide-tiles__sub-img">
-                        <img
-                          src="/img/work-course-1.png"
-                          alt="course webpage"
-                        />
-                      </div>
-
-                      <div class="wide-tiles__sub-heading">
-                        <h5 class="heading-5">Natours</h5>
-                      </div>
-                      <div class="wide-tiles__sub-description">
-                        <h6 class="heading-6">
-                          Website built with CSS Flex Technology
-                        </h6>
-                        <a href="#" class="a-button">
-                          <span
-                            class="button button--narrow button--no-margin button--outline open-previewer"
-                            >Source code</span
-                          >
-                        </a>
-                        <button class="button button--narrow button--no-margin">
-                          View
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="wide-tiles__tile">
-                  <div class="wide-tiles__header">
-                    <img
-                      src="/img/python.png"
-                      alt="python"
-                      class="wide-tiles__img"
-                    />
-                    <h4 class="heading-4">
-                      Learn Python Programming Masterclass
-                    </h4>
-                  </div>
-                  <div class="wide-tiles__info">
-                    <div class="wide-tiles__date">
-                      <svg>
-                        <use
-                          xlink:href="/img/svg/sprite.svg#icon-cert-date-icon"
-                        ></use>
-                      </svg>
-                      <p>Sept 2021</p>
-                    </div>
-                    <div class="wide-tiles__duration">
-                      <svg>
-                        <use
-                          xlink:href="/img/svg/sprite.svg#icon-cert-duration-icon"
-                        ></use>
-                      </svg>
-                      <p>67 hr</p>
-                    </div>
-                  </div>
-                  <div class="wide-tiles__buttons">
-                    <a
-                      href="https://www.udemy.com/certificate/UC-fe0bd91f-02b2-4645-a221-fb4c2948e8a5/"
-                      class="button button--underline"
-                      >View Certification<span></span
-                    ></a>
-                    <button class="button button--plus button--no-margin">
-                      Course work sample
-                      <span class="plus">
-                        <div class="plus__horizontal"></div>
-                        <div class="plus__vertical"></div>
-                      </span>
-                    </button>
-                  </div>
-                  <div class="wide-tiles__sub">
-                    <div class="wide-tiles__sub-tile">
-                      <div class="wide-tiles__sub-line"></div>
-                      <div class="wide-tiles__sub-img">
-                        <img
-                          src="/img/work-course-1.png"
-                          alt="course webpage"
-                        />
-                      </div>
-
-                      <div class="wide-tiles__sub-heading">
-                        <h5 class="heading-5">Natours</h5>
-                      </div>
-                      <div class="wide-tiles__sub-description">
-                        <h6 class="heading-6">
-                          Website built with CSS Flex Technology
-                        </h6>
-                        <a href="#" class="a-button">
-                          <span
-                            class="button button--narrow button--no-margin button--outline"
-                            >Source code</span
-                          >
-                        </a>
-                        <button class="button button--narrow button--no-margin">
-                          View
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
 
@@ -740,16 +556,14 @@
           <header class="learning__heading learning__heading--centered">
             <h2 class="heading-2">Front end</h2>
             <p class="paragraph paragraph--center">
-              Outside of college I used a number of online learning resoures to
-              build my knowledge in Wed development. My main resourses have been
-              udemy.com and linkedin Learning.
+              I been learning front end development for about 2 years and I am always learning more. Besides building this website, I build a few webpages for fun and a number of projects for school.
             </p>
             <div class="learning__buttons">
               <button
                 class="button button--down-arrow"
                 data-id="front-end-portfolio"
               >
-                <span>Portfolio</span>
+                <span>Website Portfolio</span>
                 <svg>
                   <use xlink:href="/img/svg/sprite.svg#icon-right-arrow"></use>
                 </svg>
@@ -765,9 +579,7 @@
                 <h3 class="heading-3">Education</h3>
               </header>
               <p class="info__text paragraph paragraph--max">
-                Focusing on the latest investigations, we can positively say
-                that the initial progress in the specific action result discards
-                the principle of the entire picture.
+                Several college classes and Udemy learning courses on front end development.   
               </p>
             </div>
 
@@ -776,12 +588,10 @@
                 <use xlink:href="/img/svg/sprite.svg#icon-gears"></use>
               </svg>
               <header class="info__heading">
-                <h3 class="heading-3">Education</h3>
+                <h3 class="heading-3">libraries</h3>
               </header>
               <p class="info__text paragraph paragraph--max">
-                Focusing on the latest investigations, we can positively say
-                that the initial progress in the specific action result discards
-                the principle of the entire picture.
+                Learned and have used <b>jQuery</b> in servel projects (including this website). I am looking at learning Vue.js.  
               </p>
             </div>
 
@@ -790,32 +600,30 @@
                 <use xlink:href="/img/svg/sprite.svg#icon-skill"></use>
               </svg>
               <header class="info__heading">
-                <h3 class="heading-3">Education</h3>
+                <h3 class="heading-3">skills</h3>
               </header>
               <p class="info__text paragraph paragraph--max">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Possimus atque dolorum nulla expedita exercitationem illo
-                blanditiis accusamus, totam facilis eos ab officiis.
+                Worked with or use <b>HTML</b>, <b>CSS</b>, <b>JavaScript</b>, <b>scss</b>, <b>npm ecosystem</b>, and <b>git</b>. Checkout the source code link in the page footer to see it in use on this website.
               </p>
             </div>
           </div>
           <div class="learning__spacing" id="front-end-portfolio"></div>
           <div class="tile-title">
             <div class="tile-title__text">
-              <h3 class="heading-3">Portfolio</h3>
+              <h3 class="heading-3">Website Portfolio</h3>
             </div>
             <div class="tile-title__line"></div>
             <div class="tiles">
               <div class="tiles__tile">
                 <div class="tiles__img">
-                  <img src="/img/work-course-1.png" alt="website 1" />
+                  <img src="/img/analysis-frenzy.png" alt="website 1" />
                 </div>
                 <header class="tiles__heading">
-                  <h4 class="heading-4">Teacher website for college</h4>
+                  <h4 class="heading-4">Analysis Frenzy</h4>
                 </header>
                 <ul class="tiles__list">
-                  <li>Focused studies on Wed development.</li>
-                  <li>Graduated with Presidents Honors</li>
+                  <li>Built to be compatible with nearly 100% of all browser in use today</li>
+                  <li>Personal Project</li>
                 </ul>
                 <div class="tiles__tags">
                   <div class="tiles__tag">
@@ -838,28 +646,28 @@
                 </div>
 
                 <div class="tiles__buttons">
-                  <a href="#" class="a-button">
+                  <a target="_blank" href="https://github.com/JamesProgramming/analysis-frenzy" class="a-button">
                     <span
                       class="button button--narrow button--no-margin button--outline"
-                      >Source code</span
+                      ><span>Source code</span></span
                     >
                   </a>
-                  <button class="button button--narrow button--no-margin">
-                    View
-                  </button>
+                  <a target="_blank" href="https://jamesprogramming.github.io/analysis-frenzy/dist" class="a-button"><button class="button button--narrow button--no-margin">
+                    <span>View</span>
+                  </button></a>
                 </div>
               </div>
 
               <div class="tiles__tile">
                 <div class="tiles__img">
-                  <img src="/img/work-course-1.png" alt="website 1" />
+                  <img src="/img/american-pizza.png" alt="american pizza website" />
                 </div>
                 <header class="tiles__heading">
-                  <h4 class="heading-4">Teacher website for college</h4>
+                  <h4 class="heading-4">American Pizza</h4>
                 </header>
                 <ul class="tiles__list">
-                  <li>Focused studies on Wed development.</li>
-                  <li>Graduated with Presidents Honors</li>
+                  <li>College team website project</li>
+                  <li>Some pages require PHP (which is not running on the hosting server)</li>
                 </ul>
                 <div class="tiles__tags">
                   <div class="tiles__tag">
@@ -877,33 +685,33 @@
                         xlink:href="/img/svg/sprite.svg#icon-cert-date-icon"
                       ></use>
                     </svg>
-                    <p class="tiles__tag-name">Developer</p>
+                    <p class="tiles__tag-name">Co-developer</p>
                   </div>
                 </div>
 
                 <div class="tiles__buttons">
-                  <a href="#" class="a-button">
+                  <a target="_blank" href="https://github.com/flowxyno/CIS-255-Blue-Team" class="a-button">
                     <span
                       class="button button--narrow button--no-margin button--outline"
                       >Source code</span
                     >
                   </a>
-                  <button class="button button--narrow button--no-margin">
-                    View
-                  </button>
+                  <a target="_blank" href="https://american-pizza.netlify.app/" class="a-button"><button class="button button--narrow button--no-margin">
+                    <span>View</span>
+                  </button></a>
                 </div>
               </div>
 
               <div class="tiles__tile">
                 <div class="tiles__img">
-                  <img src="/img/work-course-1.png" alt="website 1" />
+                  <img src="/img/college-web-course-work.png" alt=">College Course Work webpage" />
                 </div>
                 <header class="tiles__heading">
-                  <h4 class="heading-4">Teacher website for college</h4>
+                  <h4 class="heading-4">College Course Work</h4>
                 </header>
                 <ul class="tiles__list">
-                  <li>Focused studies on Wed development.</li>
-                  <li>Graduated with Presidents Honors</li>
+                  <li>Page holds college course work from my Web Development class</li>
+                  <li>Best viewed on a desktop</li>
                 </ul>
                 <div class="tiles__tags">
                   <div class="tiles__tag">
@@ -926,149 +734,18 @@
                 </div>
 
                 <div class="tiles__buttons">
-                  <a href="#" class="a-button">
+                  <a target="_blank" href="https://github.com/JamesProgramming/web-development-class-work" class="a-button">
                     <span
                       class="button button--narrow button--no-margin button--outline"
                       >Source code</span
                     >
                   </a>
-                  <button class="button button--narrow button--no-margin">
-                    View
-                  </button>
+                  <a target="_blank" href="https://jamesprogramming.github.io/web-development-class-work/" class="a-button"><button class="button button--narrow button--no-margin">
+                    <span>View</span>
+                  </button></a>
                 </div>
               </div>
 
-              <div class="tiles__tile">
-                <div class="tiles__img">
-                  <img src="/img/work-course-1.png" alt="website 1" />
-                </div>
-                <header class="tiles__heading">
-                  <h4 class="heading-4">Teacher website for college</h4>
-                </header>
-                <ul class="tiles__list">
-                  <li>Focused studies on Wed development.</li>
-                  <li>Graduated with Presidents Honors</li>
-                </ul>
-                <div class="tiles__tags">
-                  <div class="tiles__tag">
-                    <svg class="tiles__tag-svg">
-                      <use
-                        xlink:href="/img/svg/sprite.svg#icon-cert-date-icon"
-                      ></use>
-                    </svg>
-                    <p class="tiles__tag-name">Designer</p>
-                  </div>
-
-                  <div class="tiles__tag">
-                    <svg class="tiles__tag-svg">
-                      <use
-                        xlink:href="/img/svg/sprite.svg#icon-cert-date-icon"
-                      ></use>
-                    </svg>
-                    <p class="tiles__tag-name">Developer</p>
-                  </div>
-                </div>
-
-                <div class="tiles__buttons">
-                  <a href="#" class="a-button">
-                    <span
-                      class="button button--narrow button--no-margin button--outline"
-                      >Source code</span
-                    >
-                  </a>
-                  <button class="button button--narrow button--no-margin">
-                    View
-                  </button>
-                </div>
-              </div>
-
-              <div class="tiles__tile">
-                <div class="tiles__img">
-                  <img src="/img/work-course-1.png" alt="website 1" />
-                </div>
-                <header class="tiles__heading">
-                  <h4 class="heading-4">Teacher website for college</h4>
-                </header>
-                <ul class="tiles__list">
-                  <li>Focused studies on Wed development.</li>
-                  <li>Graduated with Presidents Honors</li>
-                </ul>
-                <div class="tiles__tags">
-                  <div class="tiles__tag">
-                    <svg class="tiles__tag-svg">
-                      <use
-                        xlink:href="/img/svg/sprite.svg#icon-cert-date-icon"
-                      ></use>
-                    </svg>
-                    <p class="tiles__tag-name">Designer</p>
-                  </div>
-
-                  <div class="tiles__tag">
-                    <svg class="tiles__tag-svg">
-                      <use
-                        xlink:href="/img/svg/sprite.svg#icon-cert-date-icon"
-                      ></use>
-                    </svg>
-                    <p class="tiles__tag-name">Developer</p>
-                  </div>
-                </div>
-
-                <div class="tiles__buttons">
-                  <a href="#" class="a-button">
-                    <span
-                      class="button button--narrow button--no-margin button--outline"
-                      >Source code</span
-                    >
-                  </a>
-                  <button class="button button--narrow button--no-margin">
-                    View
-                  </button>
-                </div>
-              </div>
-
-              <div class="tiles__tile">
-                <div class="tiles__img">
-                  <img src="/img/work-course-1.png" alt="website 1" />
-                </div>
-                <header class="tiles__heading">
-                  <h4 class="heading-4">Teacher website for college</h4>
-                </header>
-                <ul class="tiles__list">
-                  <li>Focused studies on Wed development.</li>
-                  <li>Graduated with Presidents Honors</li>
-                </ul>
-                <div class="tiles__tags">
-                  <div class="tiles__tag">
-                    <svg class="tiles__tag-svg">
-                      <use
-                        xlink:href="/img/svg/sprite.svg#icon-cert-date-icon"
-                      ></use>
-                    </svg>
-                    <p class="tiles__tag-name">Designer</p>
-                  </div>
-
-                  <div class="tiles__tag">
-                    <svg class="tiles__tag-svg">
-                      <use
-                        xlink:href="/img/svg/sprite.svg#icon-cert-date-icon"
-                      ></use>
-                    </svg>
-                    <p class="tiles__tag-name">Developer</p>
-                  </div>
-                </div>
-
-                <div class="tiles__buttons">
-                  <a href="#" class="a-button">
-                    <span
-                      class="button button--narrow button--no-margin button--outline"
-                      >Source code</span
-                    >
-                  </a>
-                  <button class="button button--narrow button--no-margin">
-                    View
-                  </button>
-                </div>
-              </div>
             </div>
           </div>
         </div>
@@ -1079,21 +756,8 @@
           <header class="learning__heading">
             <h2 class="heading-2">back end</h2>
             <p class="paragraph paragraph--max">
-              Outside of college I used a number of online learning resoures to
-              build my knowledge in Wed development. My main resourses have been
-              udemy.com and linkedin Learning.
+              Recently, I complete a course on Node.js using the Express framework(see the <a href="https://natours-james-dev.herokuapp.com/" class="button--inline">final project</a>). I also used some PHP in a number of my college classes but I am hoping to fully learn PHP some time in the future. For storage, I use and completed several courses in SQL and some noSQL with mongoDB. 
             </p>
-            <div class="learning__buttons">
-              <button
-                class="button button--down-arrow"
-                data-id="back-end-portfolio"
-              >
-                <span>Portfolio</span>
-                <svg>
-                  <use xlink:href="/img/svg/sprite.svg#icon-right-arrow"></use>
-                </svg>
-              </button>
-            </div>
           </header>
           <img src="/img/svg/back-end-svg.svg" alt="" class="learning__img" />
 
@@ -1106,9 +770,7 @@
                 <h3 class="heading-3">Education</h3>
               </header>
               <p class="info__text paragraph paragraph--max">
-                Focusing on the latest investigations, we can positively say
-                that the initial progress in the specific action result discards
-                the principle of the entire picture.
+                One Udemy Learning course on Node.js
               </p>
             </div>
 
@@ -1117,12 +779,10 @@
                 <use xlink:href="/img/svg/sprite.svg#icon-gears"></use>
               </svg>
               <header class="info__heading">
-                <h3 class="heading-3">Education</h3>
+                <h3 class="heading-3">technologies</h3>
               </header>
               <p class="info__text paragraph paragraph--max">
-                Focusing on the latest investigations, we can positively say
-                that the initial progress in the specific action result discards
-                the principle of the entire picture.
+                Used mySQL, mongoDB with Node.js, and PostgreSQL. I also lightly used SQLite with Python. 
               </p>
             </div>
 
@@ -1131,290 +791,11 @@
                 <use xlink:href="/img/svg/sprite.svg#icon-skill"></use>
               </svg>
               <header class="info__heading">
-                <h3 class="heading-3">Education</h3>
+                <h3 class="heading-3">Skills</h3>
               </header>
               <p class="info__text paragraph paragraph--max">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Possimus atque dolorum nulla expedita exercitationem illo
-                blanditiis accusamus, totam facilis eos ab officiis.
+                Most skilled in SQL and Node.js. I am still in a beginning stage on back end languages. 
               </p>
-            </div>
-          </div>
-          <div class="learning__spacing" id="back-end-portfolio"></div>
-          <div class="tile-title">
-            <div class="tile-title__text">
-              <h3 class="heading-3">Portfolio</h3>
-            </div>
-            <div class="tile-title__line"></div>
-            <div class="tiles">
-              <div class="tiles__tile">
-                <div class="tiles__img">
-                  <img src="/img/work-course-1.png" alt="website 1" />
-                </div>
-                <header class="tiles__heading">
-                  <h4 class="heading-4">Teacher website for college</h4>
-                </header>
-                <ul class="tiles__list">
-                  <li>Focused studies on Wed development.</li>
-                  <li>Graduated with Presidents Honors</li>
-                </ul>
-                <div class="tiles__tags">
-                  <div class="tiles__tag">
-                    <svg class="tiles__tag-svg">
-                      <use
-                        xlink:href="/img/svg/sprite.svg#icon-cert-date-icon"
-                      ></use>
-                    </svg>
-                    <p class="tiles__tag-name">Designer</p>
-                  </div>
-
-                  <div class="tiles__tag">
-                    <svg class="tiles__tag-svg">
-                      <use
-                        xlink:href="/img/svg/sprite.svg#icon-cert-date-icon"
-                      ></use>
-                    </svg>
-                    <p class="tiles__tag-name">Developer</p>
-                  </div>
-                </div>
-
-                <div class="tiles__buttons">
-                  <a href="#" class="a-button">
-                    <span
-                      class="button button--narrow button--no-margin button--outline"
-                      >Source code</span
-                    >
-                  </a>
-                  <button
-                    class="button button--narrow button--no-margin open-previewer"
-                  >
-                    View
-                  </button>
-                </div>
-              </div>
-
-              <div class="tiles__tile">
-                <div class="tiles__img">
-                  <img src="/img/work-course-1.png" alt="website 1" />
-                </div>
-                <header class="tiles__heading">
-                  <h4 class="heading-4">Teacher website for college</h4>
-                </header>
-                <ul class="tiles__list">
-                  <li>Focused studies on Wed development.</li>
-                  <li>
-                    Graduated with Presidents Honors sdf sdf s sdf s sdf sd sdf
-                    sd sdf sd sd sdf sdf sd sdf sd s fs sdfsd sd sdf here&
-                  </li>
-                </ul>
-                <div class="tiles__tags">
-                  <div class="tiles__tag">
-                    <svg class="tiles__tag-svg">
-                      <use
-                        xlink:href="/img/svg/sprite.svg#icon-cert-date-icon"
-                      ></use>
-                    </svg>
-                    <p class="tiles__tag-name">Designer</p>
-                  </div>
-
-                  <div class="tiles__tag">
-                    <svg class="tiles__tag-svg">
-                      <use
-                        xlink:href="/img/svg/sprite.svg#icon-cert-date-icon"
-                      ></use>
-                    </svg>
-                    <p class="tiles__tag-name">Developer</p>
-                  </div>
-                </div>
-
-                <div class="tiles__buttons">
-                  <a href="#" class="a-button">
-                    <span
-                      class="button button--narrow button--no-margin button--outline"
-                      >Source code</span
-                    >
-                  </a>
-                  <button class="button button--narrow button--no-margin">
-                    View
-                  </button>
-                </div>
-              </div>
-
-              <div class="tiles__tile">
-                <div class="tiles__img">
-                  <img src="/img/work-course-1.png" alt="website 1" />
-                </div>
-                <header class="tiles__heading">
-                  <h4 class="heading-4">Teacher website for college</h4>
-                </header>
-                <ul class="tiles__list">
-                  <li>Focused studies on Wed development.</li>
-                  <li>Graduated with Presidents Honors</li>
-                </ul>
-                <div class="tiles__tags">
-                  <div class="tiles__tag">
-                    <svg class="tiles__tag-svg">
-                      <use
-                        xlink:href="/img/svg/sprite.svg#icon-cert-date-icon"
-                      ></use>
-                    </svg>
-                    <p class="tiles__tag-name">Designer</p>
-                  </div>
-
-                  <div class="tiles__tag">
-                    <svg class="tiles__tag-svg">
-                      <use
-                        xlink:href="/img/svg/sprite.svg#icon-cert-date-icon"
-                      ></use>
-                    </svg>
-                    <p class="tiles__tag-name">Developer</p>
-                  </div>
-                </div>
-
-                <div class="tiles__buttons">
-                  <a href="#" class="a-button">
-                    <span
-                      class="button button--narrow button--no-margin button--outline"
-                      >Source code</span
-                    >
-                  </a>
-                  <button class="button button--narrow button--no-margin">
-                    View
-                  </button>
-                </div>
-              </div>
-
-              <div class="tiles__tile">
-                <div class="tiles__img">
-                  <img src="/img/work-course-1.png" alt="website 1" />
-                </div>
-                <header class="tiles__heading">
-                  <h4 class="heading-4">Teacher website for college</h4>
-                </header>
-                <ul class="tiles__list">
-                  <li>Focused studies on Wed development.</li>
-                  <li>Graduated with Presidents Honors</li>
-                </ul>
-                <div class="tiles__tags">
-                  <div class="tiles__tag">
-                    <svg class="tiles__tag-svg">
-                      <use
-                        xlink:href="/img/svg/sprite.svg#icon-cert-date-icon"
-                      ></use>
-                    </svg>
-                    <p class="tiles__tag-name">Designer</p>
-                  </div>
-
-                  <div class="tiles__tag">
-                    <svg class="tiles__tag-svg">
-                      <use
-                        xlink:href="/img/svg/sprite.svg#icon-cert-date-icon"
-                      ></use>
-                    </svg>
-                    <p class="tiles__tag-name">Developer</p>
-                  </div>
-                </div>
-
-                <div class="tiles__buttons">
-                  <a href="#" class="a-button">
-                    <span
-                      class="button button--narrow button--no-margin button--outline"
-                      >Source code</span
-                    >
-                  </a>
-                  <button class="button button--narrow button--no-margin">
-                    View
-                  </button>
-                </div>
-              </div>
-
-              <div class="tiles__tile">
-                <div class="tiles__img">
-                  <img src="/img/work-course-1.png" alt="website 1" />
-                </div>
-                <header class="tiles__heading">
-                  <h4 class="heading-4">Teacher website for college</h4>
-                </header>
-                <ul class="tiles__list">
-                  <li>Focused studies on Wed development.</li>
-                  <li>Graduated with Presidents Honors</li>
-                </ul>
-                <div class="tiles__tags">
-                  <div class="tiles__tag">
-                    <svg class="tiles__tag-svg">
-                      <use
-                        xlink:href="/img/svg/sprite.svg#icon-cert-date-icon"
-                      ></use>
-                    </svg>
-                    <p class="tiles__tag-name">Designer</p>
-                  </div>
-
-                  <div class="tiles__tag">
-                    <svg class="tiles__tag-svg">
-                      <use
-                        xlink:href="/img/svg/sprite.svg#icon-cert-date-icon"
-                      ></use>
-                    </svg>
-                    <p class="tiles__tag-name">Developer</p>
-                  </div>
-                </div>
-
-                <div class="tiles__buttons">
-                  <a href="#" class="a-button">
-                    <span
-                      class="button button--narrow button--no-margin button--outline"
-                      >Source code</span
-                    >
-                  </a>
-                  <button class="button button--narrow button--no-margin">
-                    View
-                  </button>
-                </div>
-              </div>
-
-              <div class="tiles__tile">
-                <div class="tiles__img">
-                  <img src="/img/work-course-1.png" alt="website 1" />
-                </div>
-                <header class="tiles__heading">
-                  <h4 class="heading-4">Teacher website for college</h4>
-                </header>
-                <ul class="tiles__list">
-                  <li>Focused studies on Wed development.</li>
-                  <li>Graduated with Presidents Honors</li>
-                </ul>
-                <div class="tiles__tags">
-                  <div class="tiles__tag">
-                    <svg class="tiles__tag-svg">
-                      <use
-                        xlink:href="/img/svg/sprite.svg#icon-cert-date-icon"
-                      ></use>
-                    </svg>
-                    <p class="tiles__tag-name">Designer</p>
-                  </div>
-
-                  <div class="tiles__tag">
-                    <svg class="tiles__tag-svg">
-                      <use
-                        xlink:href="/img/svg/sprite.svg#icon-cert-date-icon"
-                      ></use>
-                    </svg>
-                    <p class="tiles__tag-name">Developer</p>
-                  </div>
-                </div>
-
-                <div class="tiles__buttons">
-                  <a href="#" class="a-button">
-                    <span
-                      class="button button--narrow button--no-margin button--outline"
-                      >Source code</span
-                    >
-                  </a>
-                  <button class="button button--narrow button--no-margin">
-                    View
-                  </button>
-                </div>
-              </div>
             </div>
           </div>
         </div>
@@ -1425,16 +806,14 @@
           <header class="learning__heading learning__heading--centered">
             <h2 class="heading-2">Designing</h2>
             <p class="paragraph paragraph--center">
-              Outside of college I used a number of online learning resoures to
-              build my knowledge in Wed development. My main resourses have been
-              udemy.com and linkedin Learning.
+              And what would a website be without a great design. Think this website looks great? Well, I designed it. There are a few more items I designed below. Check them out.  
             </p>
             <div class="learning__buttons">
               <button
                 class="button button--down-arrow"
                 data-id="designing-portfolio"
               >
-                <span>Portfolio</span>
+                <span>Designs</span>
                 <svg>
                   <use xlink:href="/img/svg/sprite.svg#icon-right-arrow"></use>
                 </svg>
@@ -1451,9 +830,7 @@
                 <h3 class="heading-3">Education</h3>
               </header>
               <p class="info__text paragraph paragraph--max">
-                Focusing on the latest investigations, we can positively say
-                that the initial progress in the specific action result discards
-                the principle of the entire picture.
+                College course on user interface design.
               </p>
             </div>
 
@@ -1462,12 +839,10 @@
                 <use xlink:href="/img/svg/sprite.svg#icon-gears"></use>
               </svg>
               <header class="info__heading">
-                <h3 class="heading-3">Education</h3>
+                <h3 class="heading-3">technologies</h3>
               </header>
               <p class="info__text paragraph paragraph--max">
-                Focusing on the latest investigations, we can positively say
-                that the initial progress in the specific action result discards
-                the principle of the entire picture.
+                I mainly use Lunacy designing tool made by <a class="button-inline">icons8.com</a>. However, in college I used Adobe XD to design webpages.
               </p>
             </div>
 
@@ -1476,32 +851,30 @@
                 <use xlink:href="/img/svg/sprite.svg#icon-skill"></use>
               </svg>
               <header class="info__heading">
-                <h3 class="heading-3">Education</h3>
+                <h3 class="heading-3">Skills</h3>
               </header>
               <p class="info__text paragraph paragraph--max">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Possimus atque dolorum nulla expedita exercitationem illo
-                blanditiis accusamus, totam facilis eos ab officiis.
+                Take a look at this website and the designs below and deside for yourself.
               </p>
             </div>
           </div>
           <div class="learning__spacing" id="designing-portfolio"></div>
           <div class="tile-title">
             <div class="tile-title__text">
-              <h3 class="heading-3">Portfolio</h3>
+              <h3 class="heading-3">Designs</h3>
             </div>
             <div class="tile-title__line"></div>
             <div class="tiles">
               <div class="tiles__tile">
                 <div class="tiles__img">
-                  <img src="/img/work-course-1.png" alt="website 1" />
+                  <img src="/img/resume-design-show.png" alt="resume design" />
                 </div>
                 <header class="tiles__heading">
-                  <h4 class="heading-4">Teacher website for college</h4>
+                  <h4 class="heading-4">Entry level resume</h4>
                 </header>
                 <ul class="tiles__list">
-                  <li>Focused studies on Wed development.</li>
-                  <li>Graduated with Presidents Honors</li>
+                  <li>Built on <a href="https://icons8.com/lunacy" class="button--inline">Lunacy</a> Designing Tool</li>
+
                 </ul>
                 <div class="tiles__tags">
                   <div class="tiles__tag">
@@ -1511,191 +884,6 @@
                       ></use>
                     </svg>
                     <p class="tiles__tag-name">Designer</p>
-                  </div>
-
-                  <div class="tiles__tag">
-                    <svg class="tiles__tag-svg">
-                      <use
-                        xlink:href="/img/svg/sprite.svg#icon-cert-date-icon"
-                      ></use>
-                    </svg>
-                    <p class="tiles__tag-name">Developer</p>
-                  </div>
-                </div>
-
-                <div class="tiles__buttons">
-                  <a href="#" class="a-button">
-                    <span
-                      class="button button--narrow button--no-margin button--outline"
-                      >Source code</span
-                    >
-                  </a>
-                  <button class="button button--narrow button--no-margin">
-                    View
-                  </button>
-                </div>
-              </div>
-
-              <div class="tiles__tile">
-                <div class="tiles__img">
-                  <img src="/img/work-course-1.png" alt="website 1" />
-                </div>
-                <header class="tiles__heading">
-                  <h4 class="heading-4">Teacher website for college</h4>
-                </header>
-                <ul class="tiles__list">
-                  <li>Focused studies on Wed development.</li>
-                  <li>Graduated with Presidents Honors</li>
-                </ul>
-                <div class="tiles__tags">
-                  <div class="tiles__tag">
-                    <svg class="tiles__tag-svg">
-                      <use
-                        xlink:href="/img/svg/sprite.svg#icon-cert-date-icon"
-                      ></use>
-                    </svg>
-                    <p class="tiles__tag-name">Designer</p>
-                  </div>
-
-                  <div class="tiles__tag">
-                    <svg class="tiles__tag-svg">
-                      <use
-                        xlink:href="/img/svg/sprite.svg#icon-cert-date-icon"
-                      ></use>
-                    </svg>
-                    <p class="tiles__tag-name">Developer</p>
-                  </div>
-                </div>
-
-                <div class="tiles__buttons">
-                  <a href="#" class="a-button">
-                    <span
-                      class="button button--narrow button--no-margin button--outline"
-                      >Source code</span
-                    >
-                  </a>
-                  <button class="button button--narrow button--no-margin">
-                    View
-                  </button>
-                </div>
-              </div>
-
-              <div class="tiles__tile">
-                <div class="tiles__img">
-                  <img src="/img/work-course-1.png" alt="website 1" />
-                </div>
-                <header class="tiles__heading">
-                  <h4 class="heading-4">Teacher website for college</h4>
-                </header>
-                <ul class="tiles__list">
-                  <li>Focused studies on Wed development.</li>
-                  <li>Graduated with Presidents Honors</li>
-                </ul>
-                <div class="tiles__tags">
-                  <div class="tiles__tag">
-                    <svg class="tiles__tag-svg">
-                      <use
-                        xlink:href="/img/svg/sprite.svg#icon-cert-date-icon"
-                      ></use>
-                    </svg>
-                    <p class="tiles__tag-name">Designer</p>
-                  </div>
-
-                  <div class="tiles__tag">
-                    <svg class="tiles__tag-svg">
-                      <use
-                        xlink:href="/img/svg/sprite.svg#icon-cert-date-icon"
-                      ></use>
-                    </svg>
-                    <p class="tiles__tag-name">Developer</p>
-                  </div>
-                </div>
-
-                <div class="tiles__buttons">
-                  <a href="#" class="a-button">
-                    <span
-                      class="button button--narrow button--no-margin button--outline"
-                      >Source code</span
-                    >
-                  </a>
-                  <button class="button button--narrow button--no-margin">
-                    View
-                  </button>
-                </div>
-              </div>
-
-              <div class="tiles__tile">
-                <div class="tiles__img">
-                  <img src="/img/work-course-1.png" alt="website 1" />
-                </div>
-                <header class="tiles__heading">
-                  <h4 class="heading-4">Teacher website for college</h4>
-                </header>
-                <ul class="tiles__list">
-                  <li>Focused studies on Wed development.</li>
-                  <li>Graduated with Presidents Honors</li>
-                </ul>
-                <div class="tiles__tags">
-                  <div class="tiles__tag">
-                    <svg class="tiles__tag-svg">
-                      <use
-                        xlink:href="/img/svg/sprite.svg#icon-cert-date-icon"
-                      ></use>
-                    </svg>
-                    <p class="tiles__tag-name">Designer</p>
-                  </div>
-
-                  <div class="tiles__tag">
-                    <svg class="tiles__tag-svg">
-                      <use
-                        xlink:href="/img/svg/sprite.svg#icon-cert-date-icon"
-                      ></use>
-                    </svg>
-                    <p class="tiles__tag-name">Developer</p>
-                  </div>
-                </div>
-
-                <div class="tiles__buttons">
-                  <a href="#" class="a-button">
-                    <span
-                      class="button button--narrow button--no-margin button--outline"
-                      >Source code</span
-                    >
-                  </a>
-                  <button class="button button--narrow button--no-margin">
-                    View
-                  </button>
-                </div>
-              </div>
-
-              <div class="tiles__tile">
-                <div class="tiles__img">
-                  <img src="/img/work-course-1.png" alt="website 1" />
-                </div>
-                <header class="tiles__heading">
-                  <h4 class="heading-4">Teacher website for college</h4>
-                </header>
-                <ul class="tiles__list">
-                  <li>Focused studies on Wed development.</li>
-                  <li>Graduated with Presidents Honors</li>
-                </ul>
-                <div class="tiles__tags">
-                  <div class="tiles__tag">
-                    <svg class="tiles__tag-svg">
-                      <use
-                        xlink:href="/img/svg/sprite.svg#icon-cert-date-icon"
-                      ></use>
-                    </svg>
-                    <p class="tiles__tag-name">Designer</p>
-                  </div>
-
-                  <div class="tiles__tag">
-                    <svg class="tiles__tag-svg">
-                      <use
-                        xlink:href="/img/svg/sprite.svg#icon-cert-date-icon"
-                      ></use>
-                    </svg>
-                    <p class="tiles__tag-name">Developer</p>
                   </div>
                 </div>
 
@@ -1706,25 +894,21 @@
                       >Source code</span
                     >
                   </a>
-                  <button
-                    data-src="work-course-1.dfd89d5e.png,/img/work-course-1.png"
-                    class="button button--narrow button--no-margin in-site"
-                  >
-                    View
+                  <button class="button button--narrow button--no-margin in-site" data-src="http://127.0.0.1:65160/img/resume-design.png">
+                    <span>View</span>
                   </button>
                 </div>
               </div>
 
               <div class="tiles__tile">
                 <div class="tiles__img">
-                  <img src="/img/work-course-1.png" alt="website 1" />
+                  <img src="/img/business-card-front-design-show.png" alt="business card" />
                 </div>
                 <header class="tiles__heading">
-                  <h4 class="heading-4">Teacher website for college</h4>
+                  <h4 class="heading-4">Business card</h4>
                 </header>
                 <ul class="tiles__list">
-                  <li>Focused studies on Wed development.</li>
-                  <li>Graduated with Presidents Honors</li>
+                  <li>Built on <a href="https://icons8.com/lunacy" class="button--inline">Lunacy</a> Designing Tool</li>
                 </ul>
                 <div class="tiles__tags">
                   <div class="tiles__tag">
@@ -1736,25 +920,52 @@
                     <p class="tiles__tag-name">Designer</p>
                   </div>
 
+                </div>
+
+                <div class="tiles__buttons">
+                  <a href="#" class="a-button">
+                    <span
+                      class="button button--narrow button--no-margin button--outline button--hidden"
+                      >Source code</span
+                    >
+                  </a>
+                  <button class="button button--narrow button--no-margin in-site" data-src="http://127.0.0.1:65160/img/business-card-front-design.png,http://127.0.0.1:65160/img/business-card-back-design.png">
+                    <span>View</span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="tiles__tile">
+                <div class="tiles__img">
+                  <img src="/img/house-front-design-show.png" alt="house design" />
+                </div>
+                <header class="tiles__heading">
+                  <h4 class="heading-4">House flyer</h4>
+                </header>
+                <ul class="tiles__list">
+                  <li>Designed on <a href="https://canva.com" class="button--inline">canva.com</a></li>
+                </ul>
+                <div class="tiles__tags">
                   <div class="tiles__tag">
                     <svg class="tiles__tag-svg">
                       <use
                         xlink:href="/img/svg/sprite.svg#icon-cert-date-icon"
                       ></use>
                     </svg>
-                    <p class="tiles__tag-name">Developer</p>
+                    <p class="tiles__tag-name">Designer</p>
                   </div>
+
                 </div>
 
                 <div class="tiles__buttons">
                   <a href="#" class="a-button">
                     <span
-                      class="button button--narrow button--no-margin button--outline"
+                      class="button button--narrow button--no-margin button--outline button--hidden"
                       >Source code</span
                     >
                   </a>
-                  <button class="button button--narrow button--no-margin">
-                    View
+                  <button class="button button--narrow button--no-margin in-site" data-src="http://127.0.0.1:65160/img/house-front-design.png,http://127.0.0.1:65160/img/house-back-design.png">
+                    <span>View</span>
                   </button>
                 </div>
               </div>
@@ -1810,8 +1021,8 @@
             <h4 class="heading-4">Credit</h4>
             <ul class="footer__credit-list">
               <li>
-                Node.js symbol made by
-                <a class="button--inline" href="#">icon8</a>
+                The 3 large svgs at the top of each page section made by 
+                <a class="button--inline" href="https://undraw.co/illustrations">undraw</a>
               </li>
             </ul>
           </div>

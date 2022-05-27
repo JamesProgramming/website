@@ -22,7 +22,15 @@
     & ul {
         list-style: none;
         padding-top: 1rem;
-        line-height: 2.3;
+        line-height: 1.5;
+
+        & li {
+            padding-top: .7rem;
+
+            &:not(:last-child) {
+                padding-bottom: .5rem;
+            }
+        }
     }
 
     // Footer site navigation list

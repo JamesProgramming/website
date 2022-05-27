@@ -130,13 +130,16 @@
 
         &-tile {
             border-radius: $radius-small;
-            //box-shadow: var(--shadow)-light;
             display: grid;
             grid-template-columns: [col-1] 1rem [col-2] 3fr [col-3] 4fr [col-4];
             grid-template-rows: max(20rem);
             grid-auto-rows: 0;
             overflow: hidden;
             background-color: var(--color-white);
+
+            &:not(:last-child) {
+                margin-bottom: 2rem;
+            }
         }
 
         &-line {
@@ -155,10 +158,10 @@
 
             img {
                 width: 100%;
-                filter: blur(.5rem) brightness(70%);
+                filter: blur(.3rem) brightness(70%);
 
                 .body--dark-mode & {
-                    filter: blur(.5rem) brightness(110%);
+                    filter: blur(.4rem) brightness(110%);
                 }
             }
         }

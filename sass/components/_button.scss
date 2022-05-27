@@ -1,6 +1,7 @@
 .button {
     & {
         overflow: hidden;
+        outline: none;
         cursor: pointer;
         border: none;
         text-align: center;
@@ -37,8 +38,9 @@
         transform: scale(1.01);
     }
     
-    &:active {
+    &:active, &:focus {
         transform: scale(0.98);
+        outline: none;
     }
     
     &::before {

@@ -30,11 +30,6 @@
         grid-template-rows: [row-1] 4.5rem [row-2] 1fr [row-3];
         align-items: center;
         grid-column-gap: 1.5rem;
-
-        @include respond($small) {
-            grid-template-columns: [col-2] 1fr [col-3];
-            grid-template-rows: [row-0] 5rem [row-1] 5rem [row-2] 1fr;
-        }
     }
 
     &__svg {
@@ -60,5 +55,20 @@
         grid-column: col-2 / col-3;
 
         align-self: start;
+    }
+
+    // Align boxes and content in center when in phone view 
+    &--center {
+
+        @include respond($small) {
+            text-align: center;
+        }
+
+        .info__box {
+            @include respond($small) {
+                grid-template-columns: [col-2] 1fr [col-3];
+                grid-template-rows: [row-0] 5rem [row-1] 5rem [row-2] 1fr;
+            }
+        }
     }
 }

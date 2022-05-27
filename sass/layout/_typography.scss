@@ -17,6 +17,10 @@
 
 .paragraph--center {
     margin: auto;
+
+    @include respond($small) {
+        text-align: left;
+    }
 }
 
 .paragraph--wide {

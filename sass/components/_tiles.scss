@@ -1,6 +1,6 @@
 .tiles {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
     grid-gap: 5rem;
     width: 100%;
 
@@ -21,7 +21,7 @@
         
         img {
             width: 100%;
-            filter: brightness(80%);
+            filter: blur(.15rem) brightness(80%);
         }
     }
 
@@ -30,7 +30,7 @@
         filter: brightness(95%);
         border-radius: 2rem;
         box-shadow: var(--shadow);
-        padding: 1.6rem 2.8rem;
+        padding: 1.6rem 3.5rem;
 
         justify-self: center;
         transform: translateY(-50%);
@@ -50,10 +50,10 @@
 
     &__tags {
         display: grid;
-        grid-template-columns: repeat(2, min-content);
+        grid-template-columns: repeat(2, max-content);
         grid-gap: 3rem;
         align-self: end;
-        margin: 1rem 0 0 2.58rem;
+        margin: 1.1rem 0 0 2.58rem;
     }
 
     &__tag {

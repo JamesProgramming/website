@@ -33,7 +33,7 @@
 }
 
 // Center text
-.center {
+body .center {
     text-align: center;
 }
 
@@ -42,6 +42,7 @@
     width: 100%;
     text-decoration: none;
     display: flex;
+    outline: none;
     flex-direction: column;
 }
 

@@ -70,6 +70,7 @@
 
         & a:link, & a:visited {
             height: 100%;
+            outline: none;
             display: flex;
             text-decoration: none;
             align-items: center;
@@ -83,6 +84,7 @@
         }
 
         & a:focus, & a:active {
+            outline: none;
             transform: scale(.97);
         }
 
@@ -124,6 +126,7 @@
             border: none;
             background: none;
             height: 100%;
+            outline: none;
             position: relative;
             z-index: 2;
 
