@@ -119,13 +119,13 @@ const navScrollPhone = function () {
 // Determine which window scrolling event
 const shouldNavScroll = function () {
   if (innerWidth > respondWidth && navScrollDesktop()) {
-    window.addEventListener("scroll", navScrollDesktop);
-    window.removeEventListener("scroll", navScrollPhone);
+    window.addEventListener("scroll", navScrollDesktop, { passive: true });
+    window.removeEventListener("scroll", navScrollPhone, { passive: true });
     return true;
   }
   navigation.classList.remove("navigation--active");
-  window.removeEventListener("scroll", navScrollDesktop);
-  window.addEventListener("scroll", navScrollPhone);
+  window.removeEventListener("scroll", navScrollDesktop, { passive: true });
+  window.addEventListener("scroll", navScrollPhone, { passive: true });
 };
 
 // Toggle navigation on phone
