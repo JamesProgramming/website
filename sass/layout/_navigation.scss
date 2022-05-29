@@ -275,7 +275,8 @@
         &__link-box { 
             position: fixed;
             top: 0;
-            right: -100%;   
+            right: 0; 
+            transform: translateX(100%);  
             padding: .8rem 2rem;
             visibility: hidden;
             transition: all .3s;
@@ -298,7 +299,7 @@
         // ipad and phone menu active
         &__link-box--active {
             visibility: visible;
-            right: 0;
+            transform: translateX(0);
         }
 
         &__link-box &__links {

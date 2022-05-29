@@ -127,6 +127,9 @@ body .cursor::after {
 .hide {
   opacity: 0.2; }
 
+.display-none {
+  display: none; }
+
 *,
 *::after,
 *::before {
@@ -1242,7 +1245,8 @@ body {
     .navigation__link-box {
       position: fixed;
       top: 0;
-      right: -100%;
+      right: 0;
+      transform: translateX(100%);
       padding: .8rem 2rem;
       visibility: hidden;
       transition: all .3s;
@@ -1260,7 +1264,7 @@ body {
       height: 100%; }
     .navigation__link-box--active {
       visibility: visible;
-      right: 0; }
+      transform: translateX(0); }
     .navigation__link-box .navigation__links {
       display: grid;
       grid-template-rows: repeat(5, 8rem);

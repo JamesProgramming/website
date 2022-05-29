@@ -83,3 +83,8 @@ body .cursor::after {
 .hide {
     opacity: 0.2;
 }
+
+// Set display to none (parcel with not remove it because the style attr is set to 'none') 
+.display-none {
+    display: none;
+}
