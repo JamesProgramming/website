@@ -139,7 +139,7 @@ body .cursor::after {
 
 :root {
   --color-primary-dark: #D8CB00;
-  --color-primary:#FFF600;
+  --color-primary:#FBCD00;
   --color-primary-light:#FFF724;
   --color-secondary:#0A4BFF;
   --color-secondary-dark: #0B0EDF;
@@ -1728,9 +1728,9 @@ body {
   .edu-tiles__container {
     margin-top: 5rem;
     display: grid;
-    grid-template-columns: repeat(2, min-content);
+    grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 5rem;
-    grid-column: first-col / second-col; }
+    grid-column: first-col / third-col; }
     @media only screen and (max-width: 88em) {
       .edu-tiles__container {
         grid-column: 1 / -1; } }
@@ -1741,9 +1741,10 @@ body {
   .edu-tiles__img {
     justify-self: end;
     align-self: end;
+    grid-row: 1 / 2;
     grid-column: second-col / third-col;
     display: block;
-    width: 70%; }
+    width: 10%; }
     @media only screen and (max-width: 88em) {
       .edu-tiles__img {
         grid-row: first-row / second-row;
@@ -1763,13 +1764,6 @@ body {
     flex-direction: column;
     font-family: "Open Sans", sans-serif;
     color: var(--color-black); }
-    .edu-tiles__tile-border {
-      background-color: var(--color-secondary);
-      width: 1rem;
-      height: 100rem;
-      position: absolute;
-      top: 0;
-      left: 0; }
     .edu-tiles__tile-heading {
       position: relative;
       display: grid;

@@ -16,9 +16,9 @@
     &__container {
         margin-top: 5rem;
         display: grid;
-        grid-template-columns: repeat(2, min-content);
+        grid-template-columns: repeat(2, 1fr);
         grid-column-gap: 5rem;
-        grid-column: first-col / second-col;
+        grid-column: first-col / third-col;
 
         @include respond($large) {
             grid-column: 1 / -1;
@@ -33,9 +33,10 @@
     &__img {
         justify-self: end;
         align-self: end;
+        grid-row: 1 / 2;
         grid-column: second-col / third-col;
         display: block;
-        width: 70%;
+        width: 10%;
 
         @include respond($large) {
             grid-row: first-row / second-row;
@@ -61,16 +62,6 @@
         flex-direction: column;
         font-family: $reading-font;
         color: var(--color-black);
-        
-        // blue border line
-        &-border {
-            background-color: var(--color-secondary);
-            width: 1rem;
-            height: 100rem;
-            position: absolute;
-            top: 0;
-            left: 0;
-        }
 
         &-heading {
             position: relative;

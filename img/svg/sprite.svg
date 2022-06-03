@@ -76,6 +76,11 @@
 <path d="M21.035 19.703q-0.277 0-0.561-0.255t-0.284-0.634q0-0.35 0.248-0.496l2.814-1.837-2.814-1.852q-0.248-0.131-0.248-0.481 0-0.379 0.284-0.634t0.561-0.255q0.16 0 0.248 0.058l3.762 2.464q0.204 0.131 0.299 0.335t0.095 0.365-0.095 0.365-0.299 0.335l-3.762 2.45q-0.087 0.073-0.248 0.073z"></path>
 <path fill="none" stroke="#444343" style="stroke: var(--color1, #444343)" stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.2152" d="M0.608 16c0-8.501 6.891-15.392 15.392-15.392s15.392 6.891 15.392 15.392c0 8.501-6.891 15.392-15.392 15.392s-15.392-6.891-15.392-15.392z"></path>
 </symbol>
+<symbol id="icon-notes" viewBox="0 0 22.170898 22.20935">
+  <g id="svg-2" transform="translate(1.5 1.5)">
+    <path d="M13.0271 2.37787L16.793 6.14375M14.6248 0.780356C15.6644 -0.259792 17.3505 -0.260166 18.3906 0.77952C19.4308 1.81921 19.4312 3.50525 18.3915 4.5454L3.72754 19.2093L0 19.2093L0 15.4051L14.6248 0.780356L14.6248 0.780356Z" id="Shape" fill="none" fill-rule="evenodd" stroke="#FBCD00" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+</symbol>
 <symbol id="icon-design" viewBox="0 0 32 32">
 <path fill="none" stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.2152" d="M0.608 16c0-8.501 6.891-15.392 15.392-15.392s15.392 6.891 15.392 15.392c0 8.501-6.891 15.392-15.392 15.392s-15.392-6.891-15.392-15.392z"></path>
 <path fill="none" stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.2152" stroke-dashoffset="0" d="M10.086 12.030l-0.81 0.81"></path>
