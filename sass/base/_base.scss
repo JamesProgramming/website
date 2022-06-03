@@ -56,6 +56,8 @@
 html {
     box-sizing: border-box;
     font-size: 62.5%;
+    background-position: center;
+    background-size: 200%;
 
     @include respond($mid) {
         font-size: 50%;
@@ -72,7 +74,7 @@ body {
     font-family: $heading-font;
     color: var(--color-black-dark); 
     animation: page 1s; 
-    background-color: var(--color-pure-white);
+    //background-color: var(--color-pure-white);
 
     @include respond($small) {
         --section-space: 10rem;

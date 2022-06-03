@@ -167,7 +167,9 @@ body .cursor::after {
 
 html {
   box-sizing: border-box;
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  background-position: center;
+  background-size: 200%; }
   @media only screen and (max-width: 78.125em) {
     html {
       font-size: 50%; } }
@@ -180,8 +182,7 @@ body {
   scroll-behavior: smooth;
   font-family: "Dosis", sans-serif;
   color: var(--color-black-dark);
-  animation: page 1s;
-  background-color: var(--color-pure-white); }
+  animation: page 1s; }
   @media only screen and (max-width: 34.375em) {
     body {
       --section-space: 10rem; } }
