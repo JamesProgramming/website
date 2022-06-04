@@ -7,44 +7,36 @@
     &__tile {
         display: grid;
         grid-template-rows: 20rem min-content max-content 1fr max-content;
-
-        overflow: hidden;
+        font-family: $reading-font;
+        font-size: 1.6rem;
 
         border-radius: $radius-small;
-        box-shadow: var(--shadow);
     }
 
     &__img {
         display: grid;
-        filter: brightness(90%);
+        position: relative;
+        z-index: 10;
         overflow: hidden;
+        border-radius: $radius-small;
         
         img {
             width: 100%;
-            filter: blur(.15rem) brightness(80%);
+            filter: brightness(70%);
         }
     }
 
     &__heading {
-        background-color: var(--color-primary-light);
-        filter: brightness(95%);
-        border-radius: 2rem;
-        box-shadow: var(--shadow);
-        padding: 1.6rem 3.5rem;
+        text-align: center;
+        background-image: linear-gradient(to right bottom, var(--color-primary-lightest), var(--color-primary-light));
+        border-radius: 0 0 $radius-small $radius-small;
+        padding: 3.1rem 3.5rem 1.9rem;
+        width: 100%;
+        transform-origin: bottom;
+        transform: scaleY(1.2);
 
-        justify-self: center;
-        transform: translateY(-50%);
-    }
-
-    &__list {
-        list-style-image: url('/img/svg/list-svg.svg');
-        font-size: 1.6rem;
-        font-family: $reading-font;
-        line-height: 1.5;
-        margin: 0 4rem;
-
-        & li:not(:last-child) {
-            padding-bottom: 1rem;
+        & > * {
+            transform: scaleY(.8344);
         }
     }
 
@@ -56,36 +48,14 @@
         margin: 1.1rem 0 0 2.58rem;
     }
 
-    &__tag {
-        display: flex;
-        align-items: center;
-
-        &-svg {
-            display: block;
-            width: 2.5rem;
-            height: 2.5rem;
-            fill: var(--color-green);
-        }
-
-        &-name {
-            font-family: $reading-font;
-            font-size: 1.4rem;
-            color: var(--color-black-light);
-            font-weight: 700;
-            padding-left: .4rem;
-            text-transform: uppercase;
-        }
-    }
-
     // sourse code and view button
     &__buttons {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: min-content;
         grid-gap: 2rem;
 
         align-self: end;
         align-items: end;
-        padding: 2rem;
-        margin-top: 2rem;
+        margin-top: 2.1rem;
     }
 }

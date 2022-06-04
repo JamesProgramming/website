@@ -55,24 +55,26 @@
     // Tile with academic degree
     &__tile {
         position: relative;
-        border-radius: $radius;
-        overflow: hidden;
-        box-shadow: var(--shadow);
+        //border-radius: $radius;
+        //overflow: hidden;
+        //box-shadow: var(--shadow);
         display: flex;
         flex-direction: column;
+        align-items: start;
         font-family: $reading-font;
         color: var(--color-black);
 
         &-heading {
             position: relative;
             display: grid;
-            grid-template-columns: max-content;
+            align-self: stretch;
             justify-content: center;
             z-index: 20;
-            margin: 3rem 4rem 2rem 0;
-            padding: 1rem 3rem 1rem 7rem;
-            border-radius: 0 $radius-small $radius-small 0;
-            background-color: var(--color-white-dark);
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            border-radius: $radius-small;
+            background-image: linear-gradient(to right, var(--color-primary-lightest), var(--color-primary-light));
+
 
             @include respond($mid-small) {
                 margin-right: 3rem;
@@ -80,61 +82,16 @@
 
         }
 
-        &-college {
-            display: flex;
-            align-items: center;
-            padding-left: 2rem;
-
-            svg {
-                display: block;
-                padding-top: .3rem;
-                padding-right: .5rem;
-                height: 3.3rem;
-                width: 3.3rem;
-                fill: blue;
-            }
-        }
-
         &-name {
             font-size: 1.8rem;
-            font-weight: 600;
+            font-weight: 700;
             letter-spacing: .05rem;
         }
-
+    
         &-location {
             font-size: 1.4rem;
             text-transform: uppercase;
             letter-spacing: .05rem;
-        }
-
-        &-duration {
-            padding: 2rem;
-            display: flex;
-            align-items: center;
-            padding-left: 2.3rem;
-
-            & svg {
-                display: block;
-                padding-right: .6rem;
-                height: 2.8rem;
-                width: 2.8rem;
-            }
-        }
-
-        &-date {
-            font-size: 1.7rem;
-        }
-
-        &-list {
-            margin: 2rem 3rem 2.5rem 4.3rem;
-            list-style-image: url('/img/svg/list-svg.svg');
-
-            line-height: 1.5;
-            font-size: 1.6rem;
-
-            & li {
-                padding-bottom: 1rem;
-            }
         }
     }
 }

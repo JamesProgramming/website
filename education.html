@@ -92,32 +92,38 @@
             <header class="edu-tiles__tile-heading">
               <h3 class="heading-3">ASSOCATE OF ART</h3>
             </header>
-            <div class="edu-tiles__tile-college">
+            <div class="detail-item__item edu-tiles__tile-college">
               <svg class="icon">
                 <use xlink:href="/img/svg/sprite.svg#icon-edu-location"></use>
               </svg>
-              <div class="edu-tiles__tile-college-info">
+              <div class="">
                 <p class="edu-tiles__tile-name">Olympic College</p>
                 <p class="edu-tiles__tile-location">Bremerton, Wa</p>
               </div>
             </div>
-            <div class="edu-tiles__tile-duration">
+            <div class="detail-item__item">
               <svg class="icon">
                 <use xlink:href="/img/svg/sprite.svg#icon-edu-duration"></use>
               </svg>
-              <p class="edu-tiles__tile-date">2019&bull;2021</p>
+              <p class="">2019 &rarr; 2021</p>
             </div>
-            <ul class="edu-tiles__tile-list">
-              <li>Focused studies on Web development and mathmadics.</li>
-              <li>Graduated with Presidents Honors.</li>
-            </ul>
+            <div class="detail-item__item">
+              <svg class="icon">
+                <use xlink:href="/img/svg/sprite.svg#icon-notes"></use>
+              </svg>
+              <ul>
+                <li>Focused studies on Web development and mathmadics.</li>
+                <li>Graduated with Presidents Honors.</li>
+              </ul>
+            </div>
+
           </div>
 
           <div class="edu-tiles__tile">
             <header class="edu-tiles__tile-heading">
               <h3 class="heading-3">BS IN COMPUTER SCIENCE</h3>
             </header>
-            <div class="edu-tiles__tile-college">
+            <div class="detail-item__item edu-tiles__tile-college">
               <svg class="icon">
                 <use xlink:href="/img/svg/sprite.svg#icon-edu-location"></use>
               </svg>
@@ -126,15 +132,20 @@
                 <p class="edu-tiles__tile-location">Sait Lake City , UT</p>
               </div>
             </div>
-            <div class="edu-tiles__tile-duration">
+            <div class="detail-item__item edu-tiles__tile-duration">
               <svg class="icon">
                 <use xlink:href="/img/svg/sprite.svg#icon-edu-duration"></use>
               </svg>
-              <p class="edu-tiles__tile-date">2021&bull;Now</p>
+              <p class="">10/2021 &RightArrow; Now</p>
             </div>
-            <ul class="edu-tiles__tile-list">
-              <li>Plan to complete by the spring of 2023</li>
-            </ul>
+            <div class="detail-item__item">
+              <svg class="icon">
+                <use xlink:href="/img/svg/sprite.svg#icon-notes"></use>
+              </svg>
+              <ul class="">
+                <li>Plan to complete by the spring of 2023</li>
+              </ul>
+            </div>
           </div>
         </div>
         <img
@@ -193,15 +204,16 @@
                     </h4>
                   </div>
                   <div class="wide-tiles__info">
-                    <div class="wide-tiles__date">
+                    <div class="detail-item__item detail-item--compact">
                       <svg>
                         <use
                           xlink:href="/img/svg/sprite.svg#icon-cert-date-icon"
                         ></use>
                       </svg>
+  
                       <p>Sept 2021</p>
                     </div>
-                    <div class="wide-tiles__duration">
+                    <div class="detail-item__item detail-item--compact">
                       <svg>
                         <use
                           xlink:href="/img/svg/sprite.svg#icon-cert-duration-icon"
@@ -575,9 +587,11 @@
           </header>
           <div class="info max-width-content">
             <div class="info__box">
-              <svg class="info__svg">
-                <use xlink:href="/img/svg/sprite.svg#icon-academic"></use>
-              </svg>
+              <div class="info__svg">
+                <svg class="">
+                  <use xlink:href="/img/svg/sprite.svg#icon-academic"></use>
+                </svg>
+              </div>
               <header class="info__heading">
                 <h3 class="heading-3">Education</h3>
               </header>
@@ -587,26 +601,31 @@
             </div>
 
             <div class="info__box">
-              <svg class="info__svg">
-                <use xlink:href="/img/svg/sprite.svg#icon-gears"></use>
-              </svg>
+              <div class="info__svg">
+                <svg>
+                  <use xlink:href="/img/svg/sprite.svg#icon-gears"></use>
+                </svg>
+              </div>
+
               <header class="info__heading">
                 <h3 class="heading-3">libraries</h3>
               </header>
               <p class="info__text paragraph paragraph--max">
-                Learned and have used <b>jQuery</b> in servel projects (including this website). I am looking at learning Vue.js.  
+                Learned and have used jQuery in servel projects (including this website). I am looking at learning Vue.js.  
               </p>
             </div>
 
             <div class="info__box">
-              <svg class="info__svg">
-                <use xlink:href="/img/svg/sprite.svg#icon-skill"></use>
-              </svg>
+              <div class="info__svg">
+                <svg>
+                  <use xlink:href="/img/svg/sprite.svg#icon-skill"></use>
+                </svg>
+              </div>
               <header class="info__heading">
                 <h3 class="heading-3">skills</h3>
               </header>
               <p class="info__text paragraph paragraph--max">
-                Worked with or use <b>HTML</b>, <b>CSS</b>, <b>JavaScript</b>, <b>scss</b>, <b>npm ecosystem</b>, and <b>git</b>. Checkout the source code link in the page footer to see it in use on this website.
+                Worked with or use HTML, CSS, JavaScript, scss, npm ecosystem, and git. Checkout the source code link in the page footer to see it in use on this website.
               </p>
             </div>
           </div>
@@ -875,30 +894,33 @@
                 <header class="tiles__heading">
                   <h4 class="heading-4">Entry level resume</h4>
                 </header>
-                <ul class="tiles__list">
-                  <li>Built on <a href="https://icons8.com/lunacy" class="button--inline">Lunacy</a> Designing Tool</li>
+                <div class="detail-item__item detail-item--list detail-item--icon-compact">
+                  <svg>
+                    <use xlink:href="/img/svg/sprite.svg#icon-notes"></use>
+                  </svg> 
+                  <ul class="tiles__list">
+                    <li>Built on <a href="https://icons8.com/lunacy" class="button--inline">Lunacy</a> Designing Tool</li>
+                  </ul>
+                </div>
+                <div class="detail-item__item detail-item--info detail-item--compact">
 
-                </ul>
-                <div class="tiles__tags">
-                  <div class="tiles__tag">
-                    <svg class="tiles__tag-svg">
+                    <svg class="">
                       <use
                         xlink:href="/img/svg/sprite.svg#icon-cert-date-icon"
                       ></use>
                     </svg>
                     <p class="tiles__tag-name">Designer</p>
-                  </div>
+
                 </div>
 
                 <div class="tiles__buttons">
-                  <a href="#" class="a-button">
-                    <span
-                      class="button button--narrow button--no-margin button--outline button--hidden"
-                      >Source code</span
-                    >
-                  </a>
-                  <button class="button button--narrow button--no-margin in-site" data-src="/image/resume-design.png">
+                  <button class="button button--narrow button--no-margin button--right-arrow in-site" data-src="/image/resume-design.png">
                     <span>View</span>
+                    <svg class="">
+                      <use
+                        xlink:href="/img/svg/sprite.svg#icon-right-arrow"
+                      ></use>
+                    </svg>
                   </button>
                 </div>
               </div>
@@ -910,30 +932,33 @@
                 <header class="tiles__heading">
                   <h4 class="heading-4">Business card</h4>
                 </header>
-                <ul class="tiles__list">
-                  <li>Built on <a href="https://icons8.com/lunacy" class="button--inline">Lunacy</a> Designing Tool</li>
-                </ul>
-                <div class="tiles__tags">
-                  <div class="tiles__tag">
-                    <svg class="tiles__tag-svg">
+                <div class="detail-item__item detail-item--list detail-item--icon-compact">
+                  <svg>
+                    <use xlink:href="/img/svg/sprite.svg#icon-notes"></use>
+                  </svg> 
+                  <ul>
+                    <li>Built on <a href="https://icons8.com/lunacy" class="button--inline">Lunacy</a> Designing Tool</li>
+                  </ul>
+                </div>
+
+                <div class="detail-item__item detail-item--info detail-item--compact">
+                    <svg>
                       <use
                         xlink:href="/img/svg/sprite.svg#icon-cert-date-icon"
                       ></use>
                     </svg>
                     <p class="tiles__tag-name">Designer</p>
-                  </div>
 
                 </div>
 
                 <div class="tiles__buttons">
-                  <a href="#" class="a-button">
-                    <span
-                      class="button button--narrow button--no-margin button--outline button--hidden"
-                      >Source code</span
-                    >
-                  </a>
-                  <button class="button button--narrow button--no-margin in-site" data-src="/image/business-card-front-design.png,/image/business-card-back-design.png">
+                  <button class="button button--narrow button--no-margin button--right-arrow in-site" data-src="/image/resume-design.png">
                     <span>View</span>
+                    <svg class="">
+                      <use
+                        xlink:href="/img/svg/sprite.svg#icon-right-arrow"
+                      ></use>
+                    </svg>
                   </button>
                 </div>
               </div>
@@ -945,30 +970,32 @@
                 <header class="tiles__heading">
                   <h4 class="heading-4">House flyer</h4>
                 </header>
-                <ul class="tiles__list">
-                  <li>Designed on <a href="https://canva.com" class="button--inline">canva.com</a></li>
-                </ul>
-                <div class="tiles__tags">
-                  <div class="tiles__tag">
-                    <svg class="tiles__tag-svg">
+                <div class="detail-item__item detail-item--list detail-item--icon-compact">
+                  <svg>
+                    <use xlink:href="/img/svg/sprite.svg#icon-notes"></use>
+                  </svg> 
+                  <ul>
+                    <li>Designed on <a href="https://canva.com" class="button--inline">canva.com</a></li>
+                  </ul>
+                </div>
+
+                <div class="detail-item__item detail-item--info detail-item--compact">
+                    <svg>
                       <use
                         xlink:href="/img/svg/sprite.svg#icon-cert-date-icon"
                       ></use>
                     </svg>
-                    <p class="tiles__tag-name">Designer</p>
-                  </div>
-
+                    <p>Designer</p>
                 </div>
 
                 <div class="tiles__buttons">
-                  <a href="#" class="a-button">
-                    <span
-                      class="button button--narrow button--no-margin button--outline button--hidden"
-                      >Source code</span
-                    >
-                  </a>
-                  <button class="button button--narrow button--no-margin in-site" data-src="/image/house-front-design.png,/image/house-back-design.png">
+                  <button class="button button--narrow button--no-margin button--right-arrow in-site" data-src="/image/resume-design.png">
                     <span>View</span>
+                    <svg class="">
+                      <use
+                        xlink:href="/img/svg/sprite.svg#icon-right-arrow"
+                      ></use>
+                    </svg>
                   </button>
                 </div>
               </div>

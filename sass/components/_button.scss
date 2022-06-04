@@ -6,18 +6,18 @@
         border: none;
         text-align: center;
         position: relative;
-        padding: 2rem;
-        background-color: var(--color-secondary);
+        padding: 2.2rem;
+        background-color: var(--color-primary-light);
         border-radius: $radius-large;
         margin-top: auto;
         margin-left: 5rem;
         margin-right: 5rem;
         letter-spacing: .1rem;
         font-family: $heading-font;
-        box-shadow: var(--shadow);
-        font-weight: 500;
+        box-shadow: var(--shadow-light);
+        font-weight: 700;
         font-size: 2.2rem;
-        color: var(--color-gray-light);
+        color: var(--color-black-dark );
         transition: all .2s;
         align-self: stretch;
         z-index: 20;
@@ -34,8 +34,7 @@
     }
     
     &:hover {
-        color: var(--color-white);
-        transform: scale(1.01);
+        transform: scale(1.02);
     }
     
     &:active, &:focus {
@@ -130,6 +129,12 @@
         }
     }
 
+    // Narrow button
+    &--narrow {
+        padding: 1.3rem 2rem;
+        font-size: 1.7rem;
+    }
+
     // Button with down arrow
     &--down-arrow {
         display: flex;
@@ -148,6 +153,27 @@
             width: 3rem;
             height: 2.3rem;
             transform: rotate(90deg);
+        }
+    }
+
+    &--right-arrow {
+        display: grid;
+        grid-column-gap: .7rem;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: repeat(2, min-content);
+        padding-right: 4rem;
+        padding-left: 4rem;
+
+        & svg {
+            justify-self: center;
+            display: inline-block;
+            align-self: center;
+            transition: all .2s;
+            position: relative;
+            z-index: 200;
+            width: 3rem;
+            height: 3rem;
         }
     }
 
@@ -184,12 +210,6 @@
                 transform: translateY(.1rem);
             }
         }
-    }
-
-    // Narrow button
-    &--narrow {
-        padding: 1.3rem 2rem;
-        font-size: 1.7rem;
     }
 
     // Button with plus symbal
