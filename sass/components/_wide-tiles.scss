@@ -56,33 +56,6 @@
         grid-row-gap: 0rem;
     }
 
-    &__date, &__duration {
-        display: flex;
-        align-items: center;
-
-        & p {
-            font-family: $reading-font;
-            color: var(--color-black);
-            padding-left: 1.8rem;
-            font-size: 1.6rem;
-            font-weight: 600;
-        }
-
-        & svg {
-            width: 2.2rem;
-            height: 2.2rem;
-            fill: var(--color-secondary);
-            stroke: var(--color-secondary);
-        }
-    }
-
-    &__duration {
-        & svg {
-            width: 2.1rem;
-            height: 2.1rem;
-        }
-    }
-
     &__buttons {
         display: flex;
         justify-content: space-between;
@@ -97,10 +70,10 @@
             
             & .button {
                 align-self: start;
+                margin-top: 2rem;
             }
 
             & > *:last-child {
-                margin-top: 2rem;
                 align-self: stretch;
                 align-items: center;
                 justify-content: space-between;

@@ -2,14 +2,14 @@
 .edu-tiles {
     margin-bottom: var(--section-space);
     display: grid;
-    grid-template-columns: [first-col] 1fr [second-col] 1fr [third-col];
+    grid-template-columns: [first-col] 2fr [second-col] 1fr [third-col] ;
 
     @include respond($large) {
         grid-template-columns: [first-col] 4fr [second-col] 1fr [third-col];
         grid-template-rows: [first-row] min-content [second-row] 1fr [third-row];
     }
 
-    @include respond($small) {
+    @include respond($small-large) {
         grid-template-columns: 1fr;
     }
 
@@ -25,30 +25,24 @@
         }
 
         @include respond($mid-small) {
-            grid-gap: 3rem;
+            grid-gap: 4rem;
             grid-template-columns: repeat(auto-fit, minmax(40rem,  1fr));
         }
     }
 
     &__img {
-        justify-self: end;
+        justify-self: start;
         align-self: end;
         grid-row: 1 / 2;
         grid-column: second-col / third-col;
         display: block;
-        width: 10%;
+        height: 100%;
 
-        @include respond($large) {
-            grid-row: first-row / second-row;
-            grid-column: second-col / third-col;
-
-        }
-
-        @include respond($small) {
+        @include respond($small-large) {
             grid-column: 1 / -1;
             justify-self: center;
             padding-bottom: 3rem;
-            width: 30%;
+            width: 50%;
         }
     }
 
@@ -77,7 +71,7 @@
 
 
             @include respond($mid-small) {
-                margin-right: 3rem;
+                margin-bottom: 1rem;
             }
 
         }

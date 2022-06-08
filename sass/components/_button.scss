@@ -17,7 +17,7 @@
         box-shadow: var(--shadow-light);
         font-weight: 700;
         font-size: 2.2rem;
-        color: var(--color-black-dark );
+        color: var(--color-black);
         transition: all .2s;
         align-self: stretch;
         z-index: 20;
@@ -34,7 +34,7 @@
     }
     
     &:hover {
-        transform: scale(1.02);
+        transform: scale(1.03);
     }
     
     &:active, &:focus {
@@ -76,10 +76,6 @@
             transform: none;
         }
     }
-
-    &:active svg {
-        transform: rotate(90deg) translateX(.5rem);
-    }
     
     &:active::before {
         transform: scale(5);
@@ -101,12 +97,31 @@
         }
     }
 
+    &--gray {
+        box-shadow: none;
+        display: flex; 
+        flex: 1 1 100%;
+        background-color: var(--color-white);
+        align-items: center;
+        justify-content: center;
+
+        &:hover, &:active, &:focus {
+            box-shadow: var(--shadow-light);
+        }
+    }
+
     // Lage gray button on wide card
     &--gray-large {
-        font-size: 2.4rem;
+        font-size: 2.3rem;
         color: var(--color-black);
         background-color: var(--color-gray-light);
         padding: 2.7rem;
+
+        @include respond($small) {
+            & {
+                padding: 2.7rem 1rem;
+            }
+        }
 
         &:hover {
             color: var(--color-black-dark);
@@ -154,6 +169,10 @@
             height: 2.3rem;
             transform: rotate(90deg);
         }
+
+        &:active svg {
+            transform: rotate(90deg) translateX(.5rem);
+        }
     }
 
     &--right-arrow {
@@ -161,7 +180,7 @@
         grid-column-gap: .7rem;
         justify-content: center;
         align-items: center;
-        grid-template-columns: repeat(2, min-content);
+        grid-template-columns: repeat(2, max-content);
         padding-right: 4rem;
         padding-left: 4rem;
 
@@ -174,6 +193,21 @@
             z-index: 200;
             width: 3rem;
             height: 3rem;
+            transform: translateY(0rem);
+        }
+
+        &:hover svg {
+            transform: translateX(.7rem);
+            @media (prefers-reduced-motion) {
+                transform: none;
+            }
+        }
+
+        &:active svg {
+            transform: translateX(-.1rem);
+            @media (prefers-reduced-motion) {
+                transform: none;
+            }
         }
     }
 

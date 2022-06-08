@@ -1,6 +1,7 @@
 .detail-item {
     &__item {
-        display: flex;
+        display: grid;
+        grid-template-columns: 3.3rem 1fr;
         justify-content: start;
         justify-self: start;
         align-self: start;
@@ -9,6 +10,7 @@
         color: var(--color-black);
         background-color: var(--color-white);
         font-size: 1.8rem;
+        font-family: $reading-font;
         margin: .7rem 0;
         padding: 1.2rem;
         padding-left: 2rem;
@@ -31,6 +33,7 @@
             list-style-image: url('/img/svg/list-svg.svg');
             line-height: 1.5;
             font-size: 1.6rem;
+            flex: 1 1 50%;
     
             & li:not(:last-child) {
                 padding-bottom: 1rem;
@@ -39,16 +42,19 @@
     }
 
     &--info { 
+            grid-template-columns: 3.3rem max-content;
             & > *:nth-child(3) {
-                margin: 0 4rem 0 4.1rem;
+                margin: 0 3.9rem 0 4.1rem;
             }
 
             & > *:nth-child(2) {
                 font-size: 1.4rem;
+                letter-spacing: .05rem;
                 font-weight: 700;
                 font-family: $reading-font;
                 text-transform: uppercase;
-                margin: 0 2rem 0 1rem;
+                margin: 0 2.3rem 0 .8rem;
+                word-break: none;
             }
 
     }

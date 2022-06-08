@@ -42,20 +42,22 @@
 
     &__tags {
         display: grid;
-        grid-template-columns: repeat(2, max-content);
-        grid-gap: 3rem;
-        align-self: end;
-        margin: 1.1rem 0 0 2.58rem;
+        justify-self: start;
+        grid-template-columns: repeat(2, min-content);
+        grid-gap: 1rem;
     }
 
     // sourse code and view button
     &__buttons {
         display: grid;
-        grid-template-columns: min-content;
-        grid-gap: 2rem;
-
+        grid-template-columns: repeat(auto-fit, minmax(16rem, max-content));
+        grid-gap: 1rem;
         align-self: end;
-        align-items: end;
+        align-items: stretch;
         margin-top: 2.1rem;
+
+        & > * > * {
+            justify-self: stretch;
+        }
     }
 }
