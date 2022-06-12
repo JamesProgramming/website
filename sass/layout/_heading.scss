@@ -27,15 +27,19 @@
         text-transform: uppercase;
         letter-spacing: .15rem;
         font-weight: 600;
-        color: var(--color-black-light);
+        color: var(--color-black);
     }
 
     &-4 {
         font-size: 2.1rem;
         font-family: $heading-font;
         font-weight: 600;
-        color: var(--color-black);
+        color: var(--color-black-dark);
         letter-spacing: .1rem;
+
+        @include respond($small) {
+            font-size: 2.2rem;
+        }
     }
 
     &-5 {

@@ -5,12 +5,32 @@
     width: 100%;
 
     &__tile {
+        position: relative;
         display: grid;
         grid-template-rows: 20rem min-content max-content 1fr max-content;
         font-family: $reading-font;
         font-size: 1.6rem;
-
         border-radius: $radius-small;
+
+        @include respond($small) {
+            &::before {
+                content: "";
+                display: block;
+                position: absolute;
+                top: 0;
+                left: -2.5rem;
+                height: 100%;
+                width: .8rem;
+                border-radius: 0 $radius-small $radius-small 0;
+                background-color: var(--color-secondary);
+            }
+        }
+
+        @include respond($tiny) {
+            &::before {
+                left: -1.4rem;
+            }
+        }
     }
 
     &__img {
@@ -20,9 +40,13 @@
         overflow: hidden;
         border-radius: $radius-small;
         
-        img {
+        & img {
             width: 100%;
             filter: brightness(70%);
+
+            .body--dark-mode & {
+                filter: none;
+            }
         }
     }
 
@@ -55,6 +79,10 @@
         align-self: end;
         align-items: stretch;
         margin-top: 2.1rem;
+
+        @include respond($small) {
+            grid-template-columns: 3fr 3fr 1fr;
+        }
 
         & > * > * {
             justify-self: stretch;

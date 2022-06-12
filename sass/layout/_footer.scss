@@ -144,9 +144,10 @@
 }
 
 @include respond($small) {
-    
-    &__container {
-        border-radius:$radius $radius 0 0;
+    .footer {
+        &__container {
+            border-radius:$radius $radius 0 0;
+        }
     }
 }
 

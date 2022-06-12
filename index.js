@@ -10,6 +10,20 @@ import "./js/toolTips";
 // Window properties
 let innerWidth = window.innerWidth;
 
+
+// console.log(new TextEncoder().encode(body));
+
+// indexedDB.open('Hashes', 1);
+// crypto.subtle.digest('SHA-256', new TextEncoder().encode(body)).then((hashMessage) => {
+//   console.log(new String(hashMessage));
+// });
+
+
+
+
+
+
+
 // navigation
 const navigation = document.getElementsByClassName("navigation")[0];
 const toTopArrow = document.getElementsByClassName("to-top")[0];
