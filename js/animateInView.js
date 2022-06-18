@@ -34,7 +34,7 @@ export const AnimateInView = class {
     });
   }
 
-  // For Accessibility (allows animation to be run immediately)
+  // For Accessibility (allows animation to be run immediately on load)
   showAccessibility() {
     this.elements.forEach((el) => {
       el.classList.add(this.className);
