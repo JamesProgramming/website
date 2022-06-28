@@ -97,6 +97,8 @@
             display: block;
             width: 12rem;
             height: 5rem;
+
+            @include reduced-motion-animation;
         }
     }
 
@@ -157,12 +159,14 @@
                 animation: homePageEven 1s .3s;
                 animation-fill-mode: forwards;
                 opacity: 0;
+                @include reduced-motion-animation;
             }
 
             &:nth-of-type(odd) {
                 animation: homePageOdd 1s .3s;
                 animation-fill-mode: forwards;
                 opacity: 0;
+                @include reduced-motion-animation;
             }
         }
 

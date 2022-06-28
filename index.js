@@ -304,6 +304,7 @@ if (!wantsReducedMotion) {
     "footer__svg--active"
   ).observation();
 } else {
+  if (document.querySelector(".header__container")) 
   new AnimateText(".header__container", {
     write: 100,
     startPause: 100,

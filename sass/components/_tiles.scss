@@ -13,6 +13,7 @@
         border-radius: $radius-small;
 
         @include respond($small) {
+            grid-template-rows: 25rem min-content max-content 1fr max-content;
             &::before {
                 content: "";
                 display: block;
@@ -78,7 +79,7 @@
         grid-gap: 1rem;
         align-self: end;
         align-items: stretch;
-        margin-top: 2.1rem;
+        margin-top: 1.8rem;
 
         @include respond($small) {
             grid-template-columns: 3fr 3fr 1fr;

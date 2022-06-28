@@ -353,6 +353,10 @@ body {
 .button--narrow {
   padding: 1.3rem 2rem;
   font-size: 1.7rem; }
+  @media only screen and (max-width: 34.375em) {
+    .button--narrow {
+      padding: 1.8rem 2.5rem;
+      font-size: 1.8rem; } }
 
 .button--down-arrow {
   display: flex;
@@ -438,7 +442,6 @@ body {
 
 .button--outline {
   background-color: transparent;
-  font-weight: 500;
   color: var(--color-black-light);
   border: solid 0.3rem var(--color-gray);
   box-shadow: none;
@@ -613,6 +616,10 @@ body {
   .cards .cards__svg--active {
     animation: toNormal 2s;
     animation-fill-mode: forwards; }
+    @media screen and (prefers-reduced-motion) {
+      .cards .cards__svg--active {
+        animation-duration: 0s;
+        animation-delay: 0s; } }
 
 @media only screen and (max-width: 88em) {
   .cards {
@@ -709,7 +716,7 @@ body {
   background-color: var(--color-white);
   font-size: 1.8rem;
   font-family: "Open Sans", sans-serif;
-  margin: .7rem 0;
+  margin: .5rem 0;
   padding: 1.2rem;
   padding-left: 2rem;
   padding-right: 0; }
@@ -771,16 +778,18 @@ body {
     font-size: 1.6rem;
     border-radius: 0.9rem; }
     @media only screen and (max-width: 34.375em) {
-      .tiles__tile::before {
-        content: "";
-        display: block;
-        position: absolute;
-        top: 0;
-        left: -2.5rem;
-        height: 100%;
-        width: .8rem;
-        border-radius: 0 0.9rem 0.9rem 0;
-        background-color: var(--color-secondary); } }
+      .tiles__tile {
+        grid-template-rows: 25rem min-content max-content 1fr max-content; }
+        .tiles__tile::before {
+          content: "";
+          display: block;
+          position: absolute;
+          top: 0;
+          left: -2.5rem;
+          height: 100%;
+          width: .8rem;
+          border-radius: 0 0.9rem 0.9rem 0;
+          background-color: var(--color-secondary); } }
     @media only screen and (max-width: 24em) {
       .tiles__tile::before {
         left: -1.4rem; } }
@@ -816,7 +825,7 @@ body {
     grid-gap: 1rem;
     align-self: end;
     align-items: stretch;
-    margin-top: 2.1rem; }
+    margin-top: 1.8rem; }
     @media only screen and (max-width: 34.375em) {
       .tiles__buttons {
         grid-template-columns: 3fr 3fr 1fr; } }
@@ -1473,6 +1482,11 @@ body {
   @media only screen and (max-width: 34.375em) {
     .heading-2 {
       text-align: center; } }
+  @supports (background-clip: text) or (-webkit-background-clip: text) {
+    .heading-2 {
+      color: transparent;
+      background-clip: text;
+      background-image: linear-gradient(to right bottom, var(--color-secondary), var(--color-secondary-dark)); } }
 
 .heading-3 {
   font-size: 2.6rem;
@@ -1738,6 +1752,10 @@ body {
       display: block;
       width: 12rem;
       height: 5rem; }
+      @media screen and (prefers-reduced-motion) {
+        .home-header__title svg {
+          animation-duration: 0s;
+          animation-delay: 0s; } }
   .home-header__heading {
     text-align: center;
     color: var(--color-secondary-darkest);
@@ -1778,10 +1796,18 @@ body {
         animation: homePageEven 1s .3s;
         animation-fill-mode: forwards;
         opacity: 0; }
+        @media screen and (prefers-reduced-motion) {
+          .home-header__lines > *:nth-of-type(even) {
+            animation-duration: 0s;
+            animation-delay: 0s; } }
       .home-header__lines > *:nth-of-type(odd) {
         animation: homePageOdd 1s .3s;
         animation-fill-mode: forwards;
         opacity: 0; }
+        @media screen and (prefers-reduced-motion) {
+          .home-header__lines > *:nth-of-type(odd) {
+            animation-duration: 0s;
+            animation-delay: 0s; } }
 
 @media only screen and (max-width: 88em) {
   .home-header__svgs {
@@ -1921,7 +1947,7 @@ body {
     position: absolute;
     top: 0;
     right: 0;
-    transform: rotate(15deg) translate(0.5rem, -2.1rem);
+    transform: rotate(15deg) translate(0.5rem, -1.7rem);
     box-shadow: var(--shadow); }
 
 .learning {

@@ -148,6 +148,11 @@
     &--narrow {
         padding: 1.3rem 2rem;
         font-size: 1.7rem;
+
+        @include respond($small) {
+            padding: 1.8rem 2.5rem;
+            font-size: 1.8rem;
+        }
     }
 
     // Button with down arrow
@@ -266,7 +271,6 @@
     // Outlined buttons
     &--outline {
         background-color: transparent;
-        font-weight: 500;
         color: var(--color-black-light);
         border: solid .3rem var(--color-gray);
         box-shadow: none;

@@ -7,6 +7,8 @@
         font-size: 5.2rem;
     }
 
+
+
     &-2 {
         font-size: 4.8rem;
         font-family: $heading-font;
@@ -20,11 +22,11 @@
             text-align: center;
         }
 
-        // @supports((background-clip: text) or (-webkit-background-clip: text)) {
-        //     color: transparent;
-        //     background-clip: text;
-        //     background-image: linear-gradient(to right bottom, var(--color-black-dark), var(--color-gray));
-        // }
+        @supports((background-clip: text) or (-webkit-background-clip: text)) {
+            color: transparent;
+            background-clip: text;
+            background-image: linear-gradient(to right bottom, var(--color-secondary), var(--color-secondary-dark));
+        }
     }
 
     &-3 {
