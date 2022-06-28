@@ -143,6 +143,14 @@
     }
 }
 
+@include respond($small) {
+    .footer {
+        &__container {
+            border-radius:$radius $radius 0 0;
+        }
+    }
+}
+
 @include respond($tiny) {
     .footer {
         padding: 0;

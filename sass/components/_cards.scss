@@ -59,13 +59,14 @@
 
         stroke-dasharray: 100;
         stroke-dashoffset: 100;
-        //background-color: blue;
+        
     }
 
     // When svg come into view
     & &__svg--active {
         animation: toNormal 2s;
         animation-fill-mode: forwards;
+        @include reduced-motion-animation;
     }
 }
 
@@ -78,7 +79,7 @@
             grid-gap: 5rem;
         }
    
-        & svg {
+        &__card > svg {
             width: 7rem;
             height: 7rem;
         }

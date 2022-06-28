@@ -11,6 +11,7 @@ const contact = fs.readFileSync(`${__dirname}/dist/contact.html`, "utf-8");
 const fourOfour = fs.readFileSync(`${__dirname}/dist/404.html`, "utf-8");
 
 app.use(express.static(path.join(__dirname, "dist")));
+app.use(express.static(path.join(__dirname, "images")));
 
 app.get("/", (req, res, next) => {
   res.status(200).send(home);
@@ -28,6 +29,6 @@ app.all("*", (req, res, next) => {
   res.status(404).send(fourOfour);
 });
 
-app.listen("80", () => {
-  console.log("It's running!");
-});
+
+
+module.exports = app;

@@ -21,24 +21,24 @@
     <link href="/favicon.ico" rel="icon" />
     <link href="style.css" rel="stylesheet" />
     <script src="index.js" type="module" defer></script>
-    <title>James Coolidge / education</title>
+    <title>James Coolidge / Education</title>
   </head>
   <body>
     <div class="navigation">
       <div class="navigation__logo-box">
-        <a class="has-tool-tip" href="/index.html" title="Logo">
+        <a class="has-tool-tip" href="/" title="James Coolidge">
           <svg class="logo-svg dark-mode-svg">
             <use xlink:href="/img/svg/sprite.svg#icon-logo"></use></svg
         ></a>
       </div>
       <nav class="navigation__link-box">
         <ul class="navigation__links">
-          <li><a href="/index.html">Home</a></li>
+          <li><a href="/">Home</a></li>
           <li class="navigation__current">
-            <a href="/education.html">Education</a>
+            <a href="/education">Education</a>
           </li>
 
-          <li><a href="/contact.html">Contact</a></li>
+          <li><a href="/contact">Contact</a></li>
           <li>
             <button class="dark-mode has-tool-tip" title="Dark mode">
               <svg class="icon">
@@ -84,43 +84,50 @@
         <div class="edu-tiles__text">
           <h2 class="heading-2">Academic</h2>
           <p class="paragraph paragraph--wide">
-            I start my higher education at olympic college in bremerton, washington. My origonal goal was to obtain a BS in Mechanical Engineering but I took a small class in web developement and the rest is history. Now, I am working on a BS in Computer Science.
+            I start my higher education at Olympic college in Bremerton, Washington. 
+            My original goal was to obtain a BS in Mechanical Engineering, but I took a 
+            small class in web development and the rest is history. Now, I am working on 
+            a BS in Computer Science.
           </p>
         </div>
         <div class="edu-tiles__container">
           <div class="edu-tiles__tile">
-            <div class="edu-tiles__tile-border"></div>
             <header class="edu-tiles__tile-heading">
               <h3 class="heading-3">ASSOCATE OF ART</h3>
             </header>
-            <div class="edu-tiles__tile-college">
-              <svg class="icon">
+            <div class="detail-item__item edu-tiles__tile-college " >
+              <svg class="has-tool-tip" title="Location">
                 <use xlink:href="/img/svg/sprite.svg#icon-edu-location"></use>
               </svg>
-              <div class="edu-tiles__tile-college-info">
+              <div class="">
                 <p class="edu-tiles__tile-name">Olympic College</p>
                 <p class="edu-tiles__tile-location">Bremerton, Wa</p>
               </div>
             </div>
-            <div class="edu-tiles__tile-duration">
-              <svg class="icon">
+            <div class="detail-item__item" >
+              <svg class="has-tool-tip" title="Date attended">
                 <use xlink:href="/img/svg/sprite.svg#icon-edu-duration"></use>
               </svg>
-              <p class="edu-tiles__tile-date">2019&bull;2021</p>
+              <p class="">2019 &rarr; 2021</p>
             </div>
-            <ul class="edu-tiles__tile-list">
-              <li>Focused studies on Web development and mathmadics.</li>
-              <li>Graduated with Presidents Honors.</li>
-            </ul>
+            <div class="detail-item__item" >
+              <svg class="has-tool-tip" title="Notes">
+                <use xlink:href="/img/svg/sprite.svg#icon-notes"></use>
+              </svg>
+              <ul>
+                <li>Focused my studies on Web development and mathematics</li>
+                <li>Degree honors: President's Scholler</li>
+              </ul>
+            </div>
+
           </div>
 
-          <div class="edu-tiles__tile">
-            <div class="edu-tiles__tile-border"></div>
+          <div class="edu-tiles__tile edu-tiles__tile--in-progress">
             <header class="edu-tiles__tile-heading">
               <h3 class="heading-3">BS IN COMPUTER SCIENCE</h3>
             </header>
-            <div class="edu-tiles__tile-college">
-              <svg class="icon">
+            <div class="detail-item__item edu-tiles__tile-college" >
+              <svg class="has-tool-tip" title="Location">
                 <use xlink:href="/img/svg/sprite.svg#icon-edu-location"></use>
               </svg>
               <div class="edu-tiles__tile-college-info">
@@ -128,15 +135,20 @@
                 <p class="edu-tiles__tile-location">Sait Lake City , UT</p>
               </div>
             </div>
-            <div class="edu-tiles__tile-duration">
-              <svg class="icon">
+            <div class="detail-item__item edu-tiles__tile-duration" >
+              <svg class="has-tool-tip" title="date attended">
                 <use xlink:href="/img/svg/sprite.svg#icon-edu-duration"></use>
               </svg>
-              <p class="edu-tiles__tile-date">2021&bull;Now</p>
+              <p class="">fall 2021 &RightArrow; Now</p>
             </div>
-            <ul class="edu-tiles__tile-list">
-              <li>Plan to complete by the spring of 2023</li>
-            </ul>
+            <div class="detail-item__item" >
+              <svg class="has-tool-tip" title="Notes">
+                <use xlink:href="/img/svg/sprite.svg#icon-notes"></use>
+              </svg>
+              <ul class="">
+                <li>Anticipating graduation in the spring of 2023</li>
+              </ul>
+            </div>
           </div>
         </div>
         <img
@@ -155,9 +167,9 @@
           <header class="learning__heading">
             <h2 class="heading-2">SELF LEARNING</h2>
             <p class="paragraph paragraph--max">
-              Outside of college I used a number of online learning resoures to
-              build my knowledge in Wed development. The follow web developement
-              course were complete on udemy.com.
+              Outside of formal education, I have used several online learning resources to
+              enhances my knowledge in Web development. The follow courses were complete 
+              through <b>udemy.com</b> learning.
             </p>
             <div class="learning__buttons">
               <button class="button button--down-arrow" data-id="front-end-tiles">
@@ -195,16 +207,17 @@
                     </h4>
                   </div>
                   <div class="wide-tiles__info">
-                    <div class="wide-tiles__date">
-                      <svg>
+                    <div class="detail-item__item detail-item--info detail-item--compact">
+                      <svg class="has-tool-tip" title="Completed">
                         <use
                           xlink:href="/img/svg/sprite.svg#icon-cert-date-icon"
                         ></use>
                       </svg>
+  
                       <p>Sept 2021</p>
                     </div>
-                    <div class="wide-tiles__duration">
-                      <svg>
+                    <div class="detail-item__item detail-item--info detail-item--compact">
+                      <svg class="has-tool-tip" title="Duration">
                         <use
                           xlink:href="/img/svg/sprite.svg#icon-cert-duration-icon"
                         ></use>
@@ -221,7 +234,7 @@
                     <button
                       class="button button--plus button--no-margin button--hidden"
                     >
-                      Course work sample
+                      Course projects
                       <span class="plus">
                         <div class="plus__horizontal"></div>
                         <div class="plus__vertical"></div>
@@ -243,16 +256,16 @@
                     </h4>
                   </div>
                   <div class="wide-tiles__info">
-                    <div class="wide-tiles__date">
-                      <svg>
+                    <div class="detail-item__item detail-item--info detail-item--compact">
+                      <svg class="has-tool-tip" title="Completed">
                         <use
                           xlink:href="/img/svg/sprite.svg#icon-cert-date-icon"
                         ></use>
                       </svg>
                       <p>April 2022</p>
                     </div>
-                    <div class="wide-tiles__duration">
-                      <svg>
+                    <div class="detail-item__item detail-item--info detail-item--compact">
+                      <svg class="has-tool-tip" title="Duration">
                         <use
                           xlink:href="/img/svg/sprite.svg#icon-cert-duration-icon"
                         ></use>
@@ -267,7 +280,7 @@
                       >View Certification<span></span
                     ></a>
                     <button class="button button--plus button--no-margin">
-                      Course work sample
+                      Course projects
                       <span class="plus">
                         <div class="plus__horizontal"></div>
                         <div class="plus__vertical"></div>
@@ -326,16 +339,16 @@
                     </h4>
                   </div>
                   <div class="wide-tiles__info">
-                    <div class="wide-tiles__date">
-                      <svg>
+                    <div class="detail-item__item detail-item--info detail-item--compact">
+                      <svg  class="has-tool-tip" title="Completed">
                         <use
                           xlink:href="/img/svg/sprite.svg#icon-cert-date-icon"
                         ></use>
                       </svg>
                       <p>Sept 2021</p>
                     </div>
-                    <div class="wide-tiles__duration">
-                      <svg>
+                    <div class="detail-item__item detail-item--info detail-item--compact">
+                      <svg class="has-tool-tip" title="Duration">
                         <use
                           xlink:href="/img/svg/sprite.svg#icon-cert-duration-icon"
                         ></use>
@@ -352,7 +365,7 @@
                     <button
                       class="button button--plus button--no-margin button--hidden"
                     >
-                      Course work sample
+                      Course projects
                       <span class="plus">
                         <div class="plus__horizontal"></div>
                         <div class="plus__vertical"></div>
@@ -385,16 +398,16 @@
                     </h4>
                   </div>
                   <div class="wide-tiles__info">
-                    <div class="wide-tiles__date">
-                      <svg>
+                    <div class="detail-item__item detail-item--info detail-item--compact">
+                      <svg class="has-tool-tip" title="Completed">
                         <use
                           xlink:href="/img/svg/sprite.svg#icon-cert-date-icon"
                         ></use>
                       </svg>
                       <p>March 2022</p>
                     </div>
-                    <div class="wide-tiles__duration">
-                      <svg>
+                    <div class="detail-item__item detail-item--info detail-item--compact">
+                      <svg class="has-tool-tip" title="Duration">
                         <use
                           xlink:href="/img/svg/sprite.svg#icon-cert-duration-icon"
                         ></use>
@@ -409,7 +422,7 @@
                       >View Certification<span></span
                     ></a>
                     <button class="button button--plus button--no-margin">
-                      Course work sample
+                      Course projects
                       <span class="plus">
                         <div class="plus__horizontal"></div>
                         <div class="plus__vertical"></div>
@@ -489,16 +502,16 @@
                     </h4>
                   </div>
                   <div class="wide-tiles__info">
-                    <div class="wide-tiles__date">
-                      <svg>
+                    <div class="detail-item__item detail-item--info detail-item--compact">
+                      <svg class="has-tool-tip" title="Completed">
                         <use
                           xlink:href="/img/svg/sprite.svg#icon-cert-date-icon"
                         ></use>
                       </svg>
                       <p>Oct 2021</p>
                     </div>
-                    <div class="wide-tiles__duration">
-                      <svg>
+                    <div class="detail-item__item detail-item--info detail-item--compact">
+                      <svg class="has-tool-tip" title="Duration">
                         <use
                           xlink:href="/img/svg/sprite.svg#icon-cert-duration-icon"
                         ></use>
@@ -511,7 +524,7 @@
                       >View Certification<span></span
                     ></a>
                     <button class="button button--plus button--no-margin">
-                      Course work sample
+                      Course projects
                       <span class="plus">
                         <div class="plus__horizontal"></div>
                         <div class="plus__vertical"></div>
@@ -561,7 +574,12 @@
           <header class="learning__heading learning__heading--centered">
             <h2 class="heading-2">Front end</h2>
             <p class="paragraph paragraph--center">
-              I been learning front end development for about 2 years and I am always learning more. Besides building this website, I build a few webpages for fun and a number of projects for school.
+              With the ever-growing list of font end technologies released continually, it is hard to keep up. My skills 
+              currently lie strongest in HTML, CSS, JavaScript, and jQuery. I have begun incorporated 
+              more technologies skills such as the CSS preprocessor SASS while exploring 
+              backwards compatibility and code compression with Parcel. There is so much more to absorb. 
+              My current learning efforts are focus on the populate React framework, but I hopping 
+              to explore Vue.js, Next.js, and more… 
             </p>
             <div class="learning__buttons">
               <button
@@ -577,38 +595,46 @@
           </header>
           <div class="info max-width-content">
             <div class="info__box">
-              <svg class="info__svg">
-                <use xlink:href="/img/svg/sprite.svg#icon-academic"></use>
-              </svg>
+              <div class="info__svg">
+                <svg class="">
+                  <use xlink:href="/img/svg/sprite.svg#icon-academic"></use>
+                </svg>
+              </div>
               <header class="info__heading">
                 <h3 class="heading-3">Education</h3>
               </header>
               <p class="info__text paragraph paragraph--max">
-                Several college classes and Udemy learning courses on front end development.   
+                Several college classes and Udemy learning courses; along with some LinkedIn Learning tutorials.
               </p>
             </div>
 
             <div class="info__box">
-              <svg class="info__svg">
-                <use xlink:href="/img/svg/sprite.svg#icon-gears"></use>
-              </svg>
+              <div class="info__svg">
+                <svg>
+                  <use xlink:href="/img/svg/sprite.svg#icon-gears"></use>
+                </svg>
+              </div>
+
               <header class="info__heading">
                 <h3 class="heading-3">libraries</h3>
               </header>
               <p class="info__text paragraph paragraph--max">
-                Learned and have used <b>jQuery</b> in servel projects (including this website). I am looking at learning Vue.js.  
+                I Have used jQuery in several projects (including this website).
               </p>
             </div>
 
             <div class="info__box">
-              <svg class="info__svg">
-                <use xlink:href="/img/svg/sprite.svg#icon-skill"></use>
-              </svg>
+              <div class="info__svg">
+                <svg>
+                  <use xlink:href="/img/svg/sprite.svg#icon-skill"></use>
+                </svg>
+              </div>
               <header class="info__heading">
                 <h3 class="heading-3">skills</h3>
               </header>
               <p class="info__text paragraph paragraph--max">
-                Worked with or use <b>HTML</b>, <b>CSS</b>, <b>JavaScript</b>, <b>scss</b>, <b>npm ecosystem</b>, and <b>git</b>. Checkout the source code link in the page footer to see it in use on this website.
+                Worked use HTML, CSS, JavaScript, SCSS, the npm ecosystem, Parcel, Git CLI with GitHub, and more. 
+                Checkout the source code link in the page footer to see most of them in use on this website.
               </p>
             </div>
           </div>
@@ -626,40 +652,50 @@
                 <header class="tiles__heading">
                   <h4 class="heading-4">Analysis Frenzy</h4>
                 </header>
-                <ul class="tiles__list">
-                  <li>Built to be compatible with nearly 100% of all browser in use today</li>
-                  <li>Personal Project</li>
-                </ul>
+                <div class="detail-item__item detail-item--icon-compact">
+                  <svg>
+                    <use xlink:href="/img/svg/sprite.svg#icon-notes"></use>
+                  </svg> 
+                  <ul>
+                    <li>Built to be compatible with nearly 100% of all browser in use today</li>
+                    <li>Personal Project</li>
+                  </ul>
+                </div>
                 <div class="tiles__tags">
-                  <div class="tiles__tag">
-                    <svg class="tiles__tag-svg">
+                  <div class="detail-item__item detail-item--info detail-item--compact">
+                    <svg >
                       <use
                         xlink:href="/img/svg/sprite.svg#icon-cert-date-icon"
                       ></use>
                     </svg>
-                    <p class="tiles__tag-name">Designer</p>
+                    <p>Designer</p>
                   </div>
 
-                  <div class="tiles__tag">
-                    <svg class="tiles__tag-svg">
+                  <div class="detail-item__item detail-item--info detail-item--compact">
+                    <svg>
                       <use
                         xlink:href="/img/svg/sprite.svg#icon-cert-date-icon"
                       ></use>
                     </svg>
-                    <p class="tiles__tag-name">Developer</p>
+                    <p >Developer</p>
                   </div>
                 </div>
 
                 <div class="tiles__buttons">
                   <a target="_blank" href="https://github.com/JamesProgramming/analysis-frenzy" class="a-button">
                     <span
-                      class="button button--narrow button--no-margin button--outline"
+                      class="button button--narrow button--no-margin button--gray"
                       ><span>Source code</span></span
                     >
                   </a>
-                  <a target="_blank" href="https://jamesprogramming.github.io/analysis-frenzy/dist" class="a-button"><button class="button button--narrow button--no-margin">
+                  <a target="_blank" href="https://jamesprogramming.github.io/analysis-frenzy/dist" class="a-button"><span class="button button--narrow button--no-margin button--right-arrow">
                     <span>View</span>
-                  </button></a>
+                    <svg class="">
+                      <use
+                        xlink:href="/img/svg/sprite.svg#icon-right-arrow"
+                      ></use>
+                    </svg>
+                  </span></a>
                 </div>
               </div>
 
@@ -670,40 +706,51 @@
                 <header class="tiles__heading">
                   <h4 class="heading-4">American Pizza</h4>
                 </header>
-                <ul class="tiles__list">
-                  <li>College team website project</li>
-                  <li>Some pages require PHP (which is not running on the hosting server)</li>
-                </ul>
+                <div class="detail-item__item detail-item--icon-compact">
+                  <svg>
+                    <use xlink:href="/img/svg/sprite.svg#icon-notes"></use>
+                  </svg> 
+                  <ul>
+                    <li>College team website project</li>
+                    <li>Some pages require PHP (which is not running on the hosting server)</li>
+                  </ul>
+                </div>
+
                 <div class="tiles__tags">
-                  <div class="tiles__tag">
-                    <svg class="tiles__tag-svg">
+                  <div class="detail-item__item detail-item--info detail-item--compact">
+                    <svg>
                       <use
                         xlink:href="/img/svg/sprite.svg#icon-cert-date-icon"
                       ></use>
                     </svg>
-                    <p class="tiles__tag-name">Designer</p>
+                    <p >Designer</p>
                   </div>
 
-                  <div class="tiles__tag">
-                    <svg class="tiles__tag-svg">
+                  <div class="detail-item__item detail-item--info detail-item--compact">
+                    <svg >
                       <use
                         xlink:href="/img/svg/sprite.svg#icon-cert-date-icon"
                       ></use>
                     </svg>
-                    <p class="tiles__tag-name">Co-developer</p>
+                    <p >Co-developer</p>
                   </div>
                 </div>
 
                 <div class="tiles__buttons">
                   <a target="_blank" href="https://github.com/flowxyno/CIS-255-Blue-Team" class="a-button">
                     <span
-                      class="button button--narrow button--no-margin button--outline"
-                      >Source code</span
+                      class="button button--narrow button--no-margin button--gray"
+                      ><span>Source code</span></span
                     >
                   </a>
-                  <a target="_blank" href="https://american-pizza.netlify.app/" class="a-button"><button class="button button--narrow button--no-margin">
+                  <a target="_blank" href="https://american-pizza.netlify.app/" class="a-button"><span class="button button--narrow button--no-margin button--right-arrow">
                     <span>View</span>
-                  </button></a>
+                    <svg class="">
+                      <use
+                        xlink:href="/img/svg/sprite.svg#icon-right-arrow"
+                      ></use>
+                    </svg>
+                  </span></a>
                 </div>
               </div>
 
@@ -714,40 +761,51 @@
                 <header class="tiles__heading">
                   <h4 class="heading-4">College Course Work</h4>
                 </header>
-                <ul class="tiles__list">
-                  <li>Page holds college course work from my Web Development class</li>
-                  <li>Best viewed on a desktop</li>
-                </ul>
+                <div class="detail-item__item detail-item--icon-compact">
+                  <svg>
+                    <use xlink:href="/img/svg/sprite.svg#icon-notes"></use>
+                  </svg> 
+                  <ul class="tiles__list">
+                    <li>Page holds college course work from a Web Development class</li>
+                    <li>Best viewed on a desktop</li>
+                  </ul>
+                </div>
+
                 <div class="tiles__tags">
-                  <div class="tiles__tag">
-                    <svg class="tiles__tag-svg">
+                  <div class="detail-item__item detail-item--info detail-item--compact">
+                    <svg class="">
                       <use
                         xlink:href="/img/svg/sprite.svg#icon-cert-date-icon"
                       ></use>
                     </svg>
-                    <p class="tiles__tag-name">Designer</p>
+                    <p >Designer</p>
                   </div>
 
-                  <div class="tiles__tag">
-                    <svg class="tiles__tag-svg">
+                  <div class="detail-item__item detail-item--info detail-item--compact">
+                    <svg >
                       <use
                         xlink:href="/img/svg/sprite.svg#icon-cert-date-icon"
                       ></use>
                     </svg>
-                    <p class="tiles__tag-name">Developer</p>
+                    <p >Developer</p>
                   </div>
                 </div>
 
                 <div class="tiles__buttons">
                   <a target="_blank" href="https://github.com/JamesProgramming/web-development-class-work" class="a-button">
                     <span
-                      class="button button--narrow button--no-margin button--outline"
-                      >Source code</span
+                      class="button button--narrow button--no-margin button--gray"
+                      ><span>Source code</span></span
                     >
                   </a>
-                  <a target="_blank" href="https://jamesprogramming.github.io/web-development-class-work/" class="a-button"><button class="button button--narrow button--no-margin">
+                  <a target="_blank" href="https://jamesprogramming.github.io/web-development-class-work/" class="a-button"><span class="button button--narrow button--no-margin button--right-arrow">
                     <span>View</span>
-                  </button></a>
+                    <svg class="">
+                      <use
+                        xlink:href="/img/svg/sprite.svg#icon-right-arrow"
+                      ></use>
+                    </svg>
+                  </span></a>
                 </div>
               </div>
 
@@ -760,17 +818,32 @@
         <div class="learning__container max-content-width">
           <header class="learning__heading">
             <h2 class="heading-2">back end</h2>
-            <p class="paragraph paragraph--max">
-              Recently, I complete a course on Node.js using the Express framework(see the <a href="https://natours-james-dev.herokuapp.com/" class="button--inline">final project</a>). I also used some PHP in a number of my college classes but I am hoping to fully learn PHP some time in the future. For storage, I use and completed several courses in SQL and some noSQL with mongoDB. 
-            </p>
+
+              <p class="paragraph paragraph--max">
+                Since building static webpages can become boring, I have started exploring back-end development with 
+                Node.js. So far, I have completed one course in Node.js through udemy.com and made extensive website 
+                and RESTful API called <a href="https://natours-james-dev.herokuapp.com/" class="button--inline">Natours</a>. 
+                I am currently looking at learning PHP because of its very widespread choice as server-side language.
+                <br /><br />
+              </p>
+              <p class="paragraph paragraph--max">
+                As far as Data management goes, I have mainly used MySQL along with some SQLite and PostgreSQL. I completed 
+                several classes in college on SQL and Data management and a few my Udemy.com courses incorporated 
+                SQL as part of the material. Recently, I started learning some NoSQL with MongoDB and after my first
+                taste of NoSQL, I really enjoy it.
+              </p>
+
           </header>
           <img src="/img/svg/back-end-svg.svg" alt="" class="learning__img" />
 
           <div class="info max-width-content">
             <div class="info__box">
-              <svg class="info__svg">
-                <use xlink:href="/img/svg/sprite.svg#icon-academic"></use>
-              </svg>
+              <div class="info__svg">
+                <svg>
+                  <use xlink:href="/img/svg/sprite.svg#icon-academic"></use>
+                </svg>
+              </div>
+
               <header class="info__heading">
                 <h3 class="heading-3">Education</h3>
               </header>
@@ -780,26 +853,31 @@
             </div>
 
             <div class="info__box">
-              <svg class="info__svg">
-                <use xlink:href="/img/svg/sprite.svg#icon-gears"></use>
-              </svg>
+              <div class="info__svg">
+                <svg>
+                  <use xlink:href="/img/svg/sprite.svg#icon-gears"></use>
+                </svg>
+              </div>
               <header class="info__heading">
                 <h3 class="heading-3">technologies</h3>
               </header>
               <p class="info__text paragraph paragraph--max">
-                Used mySQL, mongoDB with Node.js, and PostgreSQL. I also lightly used SQLite with Python. 
+                I have used mySQL, mongoDB with Node.js, and PostgreSQL. I also lightly used SQLite with Python. 
               </p>
             </div>
 
             <div class="info__box">
-              <svg class="info__svg">
-                <use xlink:href="/img/svg/sprite.svg#icon-skill"></use>
-              </svg>
+              <div class="info__svg">
+                <svg>
+                  <use xlink:href="/img/svg/sprite.svg#icon-skill"></use>
+                </svg>
+              </div>
+
               <header class="info__heading">
                 <h3 class="heading-3">Skills</h3>
               </header>
               <p class="info__text paragraph paragraph--max">
-                Most skilled in SQL and Node.js. I am still in a beginning stage on back end languages. 
+                Most skilled in SQL and Node.js. I am still in a beginning stage on back end technologies. 
               </p>
             </div>
           </div>
@@ -811,7 +889,10 @@
           <header class="learning__heading learning__heading--centered">
             <h2 class="heading-2">Designing</h2>
             <p class="paragraph paragraph--center">
-              And what would a website be without a great design. Think this website looks great? Well, I designed it. There are a few more items I designed below. Check them out.  
+              And what would a website be without a great design? Text and colors are just not enough.
+              I love designing my webpage, so they look like professional products. My only formal 
+              training in design has been a small class on design. The rest of my learning has 
+              been a process of read reading article on designing techniques, examining hundreds of webpage designs for ideas, and trial and error. Check out some of my designs below.  
             </p>
             <div class="learning__buttons">
               <button
@@ -828,21 +909,27 @@
 
           <div class="info max-width-content">
             <div class="info__box">
-              <svg class="info__svg">
-                <use xlink:href="/img/svg/sprite.svg#icon-academic"></use>
-              </svg>
+              <div class="info__svg">
+                <svg>
+                  <use xlink:href="/img/svg/sprite.svg#icon-academic"></use>
+                </svg>
+              </div>
+
               <header class="info__heading">
                 <h3 class="heading-3">Education</h3>
               </header>
               <p class="info__text paragraph paragraph--max">
-                College course on user interface design.
+                College course on User Interface Design.
               </p>
             </div>
 
             <div class="info__box">
-              <svg class="info__svg">
-                <use xlink:href="/img/svg/sprite.svg#icon-gears"></use>
-              </svg>
+              <div class="info__svg">
+                <svg>
+                  <use xlink:href="/img/svg/sprite.svg#icon-gears"></use>
+                </svg>
+              </div>
+
               <header class="info__heading">
                 <h3 class="heading-3">technologies</h3>
               </header>
@@ -852,14 +939,16 @@
             </div>
 
             <div class="info__box">
-              <svg class="info__svg">
-                <use xlink:href="/img/svg/sprite.svg#icon-skill"></use>
-              </svg>
+              <div class="info__svg">
+                <svg class="info__svg">
+                  <use xlink:href="/img/svg/sprite.svg#icon-skill"></use>
+                </svg>
+              </div>
               <header class="info__heading">
-                <h3 class="heading-3">Skills</h3>
+                <h3 class="heading-3">Skill level</h3>
               </header>
               <p class="info__text paragraph paragraph--max">
-                Take a look at this website and the designs below and deside for yourself.
+                Well, take a look at this website and the designs below and deside for yourself.
               </p>
             </div>
           </div>
@@ -877,30 +966,33 @@
                 <header class="tiles__heading">
                   <h4 class="heading-4">Entry level resume</h4>
                 </header>
-                <ul class="tiles__list">
-                  <li>Built on <a href="https://icons8.com/lunacy" class="button--inline">Lunacy</a> Designing Tool</li>
+                <div class="detail-item__item detail-item--list detail-item--icon-compact">
+                  <svg>
+                    <use xlink:href="/img/svg/sprite.svg#icon-notes"></use>
+                  </svg> 
+                  <ul class="tiles__list">
+                    <li>Built on <a href="https://icons8.com/lunacy" class="button--inline">Lunacy</a> Designing Tool</li>
+                  </ul>
+                </div>
+                <div class="detail-item__item detail-item--info detail-item--compact">
 
-                </ul>
-                <div class="tiles__tags">
-                  <div class="tiles__tag">
-                    <svg class="tiles__tag-svg">
+                    <svg class="">
                       <use
                         xlink:href="/img/svg/sprite.svg#icon-cert-date-icon"
                       ></use>
                     </svg>
-                    <p class="tiles__tag-name">Designer</p>
-                  </div>
+                    <p >Designer</p>
+
                 </div>
 
                 <div class="tiles__buttons">
-                  <a href="#" class="a-button">
-                    <span
-                      class="button button--narrow button--no-margin button--outline button--hidden"
-                      >Source code</span
-                    >
-                  </a>
-                  <button class="button button--narrow button--no-margin in-site" data-src="/image/resume-design.png">
+                  <button class="button button--narrow button--no-margin button--right-arrow in-site" data-src="/resume-design.png">
                     <span>View</span>
+                    <svg class="">
+                      <use
+                        xlink:href="/img/svg/sprite.svg#icon-right-arrow"
+                      ></use>
+                    </svg>
                   </button>
                 </div>
               </div>
@@ -912,30 +1004,33 @@
                 <header class="tiles__heading">
                   <h4 class="heading-4">Business card</h4>
                 </header>
-                <ul class="tiles__list">
-                  <li>Built on <a href="https://icons8.com/lunacy" class="button--inline">Lunacy</a> Designing Tool</li>
-                </ul>
-                <div class="tiles__tags">
-                  <div class="tiles__tag">
-                    <svg class="tiles__tag-svg">
+                <div class="detail-item__item detail-item--list detail-item--icon-compact">
+                  <svg>
+                    <use xlink:href="/img/svg/sprite.svg#icon-notes"></use>
+                  </svg> 
+                  <ul>
+                    <li>Built on <a href="https://icons8.com/lunacy" class="button--inline">Lunacy</a> Designing Tool</li>
+                  </ul>
+                </div>
+
+                <div class="detail-item__item detail-item--info detail-item--compact">
+                    <svg>
                       <use
                         xlink:href="/img/svg/sprite.svg#icon-cert-date-icon"
                       ></use>
                     </svg>
-                    <p class="tiles__tag-name">Designer</p>
-                  </div>
+                    <p >Designer</p>
 
                 </div>
 
                 <div class="tiles__buttons">
-                  <a href="#" class="a-button">
-                    <span
-                      class="button button--narrow button--no-margin button--outline button--hidden"
-                      >Source code</span
-                    >
-                  </a>
-                  <button class="button button--narrow button--no-margin in-site" data-src="/image/business-card-front-design.png,/image/business-card-back-design.png">
+                  <button class="button button--narrow button--no-margin button--right-arrow in-site" data-src="/business-card-front-design.png,/business-card-back-design.png">
                     <span>View</span>
+                    <svg class="">
+                      <use
+                        xlink:href="/img/svg/sprite.svg#icon-right-arrow"
+                      ></use>
+                    </svg>
                   </button>
                 </div>
               </div>
@@ -947,30 +1042,32 @@
                 <header class="tiles__heading">
                   <h4 class="heading-4">House flyer</h4>
                 </header>
-                <ul class="tiles__list">
-                  <li>Designed on <a href="https://canva.com" class="button--inline">canva.com</a></li>
-                </ul>
-                <div class="tiles__tags">
-                  <div class="tiles__tag">
-                    <svg class="tiles__tag-svg">
+                <div class="detail-item__item detail-item--list detail-item--icon-compact">
+                  <svg>
+                    <use xlink:href="/img/svg/sprite.svg#icon-notes"></use>
+                  </svg> 
+                  <ul>
+                    <li>Designed on <a href="https://canva.com" class="button--inline">canva.com</a></li>
+                  </ul>
+                </div>
+
+                <div class="detail-item__item detail-item--info detail-item--compact">
+                    <svg>
                       <use
                         xlink:href="/img/svg/sprite.svg#icon-cert-date-icon"
                       ></use>
                     </svg>
-                    <p class="tiles__tag-name">Designer</p>
-                  </div>
-
+                    <p>Designer</p>
                 </div>
 
                 <div class="tiles__buttons">
-                  <a href="#" class="a-button">
-                    <span
-                      class="button button--narrow button--no-margin button--outline button--hidden"
-                      >Source code</span
-                    >
-                  </a>
-                  <button class="button button--narrow button--no-margin in-site" data-src="/image/house-front-design.png,/image/house-back-design.png">
+                  <button class="button button--narrow button--no-margin button--right-arrow in-site" data-src="/house-front-design.png,/house-back-design.png">
                     <span>View</span>
+                    <svg class="">
+                      <use
+                        xlink:href="/img/svg/sprite.svg#icon-right-arrow"
+                      ></use>
+                    </svg>
                   </button>
                 </div>
               </div>
@@ -986,21 +1083,21 @@
             <h4 class="heading-4">Website</h4>
             <ul class="footer__nav-list">
               <li>
-                <a href="/index.html"><span>Home</span></a>
+                <a href="/index"><span>Home</span></a>
               </li>
               <li>
-                <a href="/education.html"><span>Education</span></a>
+                <a href="/education"><span>Education</span></a>
               </li>
 
               <li>
-                <a href="/contact.html"><span>Contact</span></a>
+                <a href="/contact"><span>Contact</span></a>
               </li>
             </ul>
           </nav>
           <div class="footer__source-code">
             <h4 class="heading-4">Source Code</h4>
             <p class="footer__source-code-text">
-              What to see the code behind this website?
+              Want to see the code that powers this website?
             </p>
             <p class="footer__source-code-text">
               Go to my github
@@ -1026,18 +1123,18 @@
             <h4 class="heading-4">Credit</h4>
             <ul class="footer__credit-list">
               <li>
-                The 3 large svgs at the top of the academic, self learning, and back end sections were made by 
+                The 3 svgs at the top of the academic, self learning, and back end sections were made by 
                 <a class="button--inline" href="https://undraw.co/illustrations">undraw</a>
               </li>
             </ul>
           </div>
         </div>
         <div class="footer__contact max-content-width">
-          <a href="/contact.html" title="email" class="has-tool-tip"
+          <a href="/contact" title="email" class="has-tool-tip"
             ><svg class="icon">
               <use xlink:href="/img/svg/sprite.svg#icon-email"></use></svg
           ></a>
-          <a href="/contact.html" title="linkedin" class="has-tool-tip"
+          <a href="https://www.linkedin.com/in/james-coolidge-web" title="linkedin" class="has-tool-tip"
             ><svg class="icon">
               <use xlink:href="/img/svg/sprite.svg#icon-linkedin"></use></svg
           ></a>
@@ -1048,7 +1145,7 @@
     <button class="to-top has-tool-tip" title="Go to top">
       <div class="to-top__arrow">
         <svg>
-          <use xlink:href="/img/svg/sprite.svg#icon-right-arrow"></use>
+          <use xlink:href="/img/svg/sprite.svg#icon-up-arr"></use>
         </svg>
       </div>
     </button>

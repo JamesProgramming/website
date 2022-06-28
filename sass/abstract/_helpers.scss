@@ -6,6 +6,10 @@
     background-color: var(--color-white);
     border-radius: $radius-large;
 
+    @include respond($small) {
+        border-radius: $radius;
+    }
+
     padding: var(--section-space) 0;
     margin-top: var(--section-space);
 
@@ -44,6 +48,9 @@ body .center {
     display: flex;
     outline: none;
     flex-direction: column;
+    justify-content: stretch;
+    margin: 0;
+    padding: 0;
 }
 
 // Place content after element to new line

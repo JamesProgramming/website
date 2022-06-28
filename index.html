@@ -16,28 +16,28 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-      href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
 
     <link href="style.css" rel="stylesheet" />
     <script src="index.js" type="module" defer></script>
-    <title>James Coolidge / home</title>
+    <title>James Coolidge / Home</title>
   </head>
   <body>
     <div class="navigation">
       <div class="navigation__logo-box">
-        <a class="has-tool-tip" href="/index.html" title="James Coolidge">
+        <a class="has-tool-tip" href="/" title="James Coolidge">
           <svg class="logo-svg dark-mode-svg">
             <use xlink:href="/img/svg/sprite.svg#icon-logo"></use></svg
         ></a>
       </div>
       <nav class="navigation__link-box">
         <ul class="navigation__links">
-          <li class="navigation__current"><a href="/index.html">Home</a></li>
-          <li><a href="/education.html">Education</a></li>
+          <li class="navigation__current"><a href="/">Home</a></li>
+          <li><a href="/education">Education</a></li>
 
-          <li><a href="/contact.html">Contact</a></li>
+          <li><a href="/contact">Contact</a></li>
           <li>
             <button class="dark-mode has-tool-tip" title="Dark mode">
               <svg class="icon">
@@ -65,42 +65,72 @@
     </div>
 
     <header class="home-header">
-      <div class="home-header__svgs">
-        <img
-          src="/img/svg/webpage-1.svg"
-          alt="webpage 1"
-          class="home-header__svgs-webpage-1 home-header__svg"
-        />
-        <img
-          src="/img/svg/webpage-2.svg"
-          alt="webpage 2"
-          class="home-header__svgs-webpage-2 home-header__svg"
-        />
-        <img
-          src="/img/svg/webpage-3.svg"
-          alt="webpage 3"
-          class="home-header__svgs-webpage-3 home-header__svg"
-        />
+      <div class="home-header__top-left"></div>
+      <div class="home-header__lines">
+        <div></div>
+        <div></div>
+        <div></div>
       </div>
-      <div class="home-header__title">
-        <h1 class="home-header__heading">
-          <span data-name="James" class="home-header__heading-first"
-            >James </span
-          ><span class="break">Coolidge</span>
-          <span class="home-header__heading-sub"
-            >Web developer <span>/</span> Designer
-          </span>
-        </h1>
+      <div class="home-header__box">
+        <div class="home-header__box-rays">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <div class="home-header__title">
+          <svg>
+            <defs>
+              <linearGradient gradientUnits="userSpaceOnUse" x1="145.9495" y1="-12.425704" x2="-28.808365" y2="61.617176" id="gradient_1">
+                <stop offset="0%" stop-color="#FF8000" />
+                <stop offset="100%" stop-color="#F8F002" />
+              </linearGradient>
+            </defs>
+            <use xlink:href="/img/svg/sprite.svg#icon-swirl" stroke="url(#gradient_1)"></use>
+          </svg>
+          <h1 class="home-header__heading">
+            <span data-name="James" class="home-header__heading-first"
+              >James </span
+            ><span class="break">Coolidge</span>
+            <span class="home-header__heading-sub"
+              >Web developer <span>/</span> Designer
+            </span>
+          </h1>
+        </div>
+        <div class="home-header__svgs">
+          <img
+            src="/img/svg/webpage-1.svg"
+            alt="webpage 1"
+            class="home-header__svgs-webpage-1 home-header__svg"
+          />
+          <img
+            src="/img/svg/webpage-2.svg"
+            alt="webpage 2"
+            class="home-header__svgs-webpage-2 home-header__svg"
+          />
+          <img
+            src="/img/svg/webpage-3.svg"
+            alt="webpage 3"
+            class="home-header__svgs-webpage-3 home-header__svg"
+          />
+        </div>
+      </div>
+      <div class="home-header__lines">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
       </div>
     </header>
     <main class="main">
       <section class="cards background">
         <div class="max-content-width">
-          <h2 class="heading-2">A Web Developer</h2>
+          <h2 class="heading-2">About me</h2>
           <p class="paragraph">
-            My passion for web development started in a small, one credit
-            college class. After typing out my first html code and seeing it
-            flash into life on my browser, I just have to learn more.
+            I am a computer science student with a passion for web development. 
+            My fascination in web technology commenced immediately after witnessing 
+            my first webpage flash into life on my browser in the fall of 2019. Since that day, 
+            I have striven to improve my skills and knowledge in web related technologies.  
           </p>
           <div class="cards__container">
             <div class="cards__card">
@@ -109,12 +139,19 @@
               </svg>
               <h3 class="heading-3">Front end</h3>
               <p class="cards__card-paragraph">
-                I started web development in college during the fall of 2019.
-                Ever since then I have been working to learn the web languages
-                and technology.
+                With the ever-growing list of font end technologies released yearly, 
+                it is hard to keep up. My skills currently lie strongest in 
+                HTML, CSS, JavaScript <b>. . .</b>
               </p>
-              <a href="/education.html#front-end" class="a-button"
-                ><button class="button"><span>See more &rarr;</span></button></a
+              <a href="/education#front-end" class="a-button"
+                ><span class="button button--right-arrow">
+                  <span>See more</span>
+                  <svg class="">
+                    <use
+                      xlink:href="/img/svg/sprite.svg#icon-right-arrow"
+                    ></use>
+                  </svg>
+                </span></a
               >
             </div>
             <div class="cards__card">
@@ -126,11 +163,19 @@
               </svg>
               <h3 class="heading-3">Back end</h3>
               <p class="cards__card-paragraph">
-                Recently, I started exploring back-end development with Node.js
-                and MongoDB.
+                Since building static webpages <br />can become boring,
+                I have started exploring back-end development with 
+                Node.js. So far, I have completed <b>. . .</b>
               </p>
-              <a href="/education.html#back-end" class="a-button"
-                ><button class="button"><span>See more &rarr;</span></button></a
+              <a href="/education#back-end" class="a-button"
+                ><span class="button button--right-arrow">
+                  <span>See more</span>
+                  <svg class="">
+                    <use
+                      xlink:href="/img/svg/sprite.svg#icon-right-arrow"
+                    ></use>
+                  </svg>
+                </span></a
               >
             </div>
             <div class="cards__card">
@@ -139,12 +184,19 @@
               </svg>
               <h3 class="heading-3">Designing</h3>
               <p class="cards__card-paragraph">
-                Building a finished product has always been my goal when in web
-                development. My web designing began in the spring of 2021, and I
-                have continued learning more.
+                And what would a website be <br />without a great design? Text and colors are just
+                not enough. I love designing my webpage so they 
+                look professional <b>. . .</b>
               </p>
               <a href="#" class="a-button"
-                ><button class="button"><span>See more &rarr;</span></button></a
+                ><span class="button button--right-arrow">
+                  <span>See more</span>
+                  <svg class="">
+                    <use
+                      xlink:href="/img/svg/sprite.svg#icon-right-arrow"
+                    ></use>
+                  </svg>
+                </span></a
               >
             </div>
           </div>
@@ -153,16 +205,16 @@
       <section class="wide-card max-content-width">
         <h2 class="heading-2 center">COMING SOON</h2>
         <p class="paragraph paragraph--center center">
-          There is more to come. I'm adding more to this <br />
+          Wait, there is more to come. I'm adding more to this <br />
           website as I get spare time.
         </p>
         <div class="wide-card__card">
           <h3 class="heading-3 wide-card__text center">
-            A blog page is soon coming to show web componets I have made.
+            New blog page on its way holding exhibits of web components I have made and more.
           </h3>
-          <a href="/education.html#designing"
+          <a href="https://blog.jamescoolidge.com"
             ><button class="button button--gray-large">
-              <span>Jamescoolidge.com/blog</span>
+              <span>blog.jamescoolidge.com</span>
             </button></a
           >
         </div>
@@ -175,21 +227,21 @@
             <h4 class="heading-4">Website</h4>
             <ul class="footer__nav-list">
               <li>
-                <a href="/index.html"><span>Home</span></a>
+                <a href="/index"><span>Home</span></a>
               </li>
               <li>
-                <a href="/education.html"><span>Education</span></a>
+                <a href="/education"><span>Education</span></a>
               </li>
 
               <li>
-                <a href="/contact.html"><span>Contact</span></a>
+                <a href="/contact"><span>Contact</span></a>
               </li>
             </ul>
           </nav>
           <div class="footer__source-code">
             <h4 class="heading-4">Source Code</h4>
             <p class="footer__source-code-text">
-              What to see the code behind this website?
+              Want to see the code that powers this website?
             </p>
             <p class="footer__source-code-text">
               Go to my github
@@ -204,7 +256,7 @@
           <div class="footer__about">
             <h4 class="heading-4">About</h4>
             <p class="footer__about-text">
-              This page was designed and coded by James Coolidge &copy;2021.
+              This page was designed and coded by James Coolidge &copy;2022.
             </p>
             <p class="footer__about-text">
               The purpose of this website is to display the owners skills in web
@@ -222,11 +274,11 @@
           </div>
         </div>
         <div class="footer__contact max-content-width">
-          <a href="/contact.html" title="email" class="has-tool-tip"
+          <a href="/contact" title="email" class="has-tool-tip"
             ><svg class="icon">
               <use xlink:href="/img/svg/sprite.svg#icon-email"></use></svg
           ></a>
-          <a href="/contact.html" title="linkedin" class="has-tool-tip"
+          <a href="https://www.linkedin.com/in/james-coolidge-web" title="linkedin" class="has-tool-tip"
             ><svg class="icon">
               <use xlink:href="/img/svg/sprite.svg#icon-linkedin"></use></svg
           ></a>
@@ -237,7 +289,7 @@
     <button class="to-top has-tool-tip" title="Go to top">
       <div class="to-top__arrow">
         <svg>
-          <use xlink:href="/img/svg/sprite.svg#icon-right-arrow"></use>
+          <use xlink:href="/img/svg/sprite.svg#icon-up-arr"></use>
         </svg>
       </div>
     </button>

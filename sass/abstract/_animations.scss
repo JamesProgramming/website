@@ -5,22 +5,14 @@
 }
 
 // Animations for home page webpage svgs
-@keyframes webpageHome1 {
-    0% {transform: translateX(-20rem); opacity: 0;}
-    15% {transform: translateX(-20rem); opacity: 0;}
-    100% {transform: translateX(0); opacity: 1;}
+@keyframes homePageEven {
+    0% {transform: translateX(-28%); opacity: 0;}
+    100% {transform: translateX(-14%); opacity: 1;}
 }
 
-@keyframes webpageHome2 {
-    0% {transform: translateX(-20rem); opacity: 0;}
-    25% {transform: translateX(-20rem); opacity: 0;}
-    100% {transform: translateX(0); opacity: 1;}
-}
-
-@keyframes webpageHome3 {
-    0% {transform: translateX(-20rem); opacity: 0;}
-    35% {transform: translateX(-20rem); opacity: 0;}
-    100% {transform: translateX(0); opacity: 1;}
+@keyframes homePageOdd {
+    0% {transform: translateX(28%); opacity: 0;}
+    100% {transform: translateX(14%); opacity: 1;}
 }
 
 // Animation for dark mode button

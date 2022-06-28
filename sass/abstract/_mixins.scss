@@ -8,3 +8,11 @@
 @mixin transform-to-center-x {
     transform: translateX(-50%);
 }
+
+@mixin reduced-motion-animation {
+    @media screen and (prefers-reduced-motion) {
+        animation-duration: 0s;
+        animation-delay: 0s;
+    }
+}
+

@@ -11,18 +11,21 @@
     
 
     &__text {
-        background-color: var(--color-white-dark);
-        border-radius: $radius-small $radius-small 0 0;
+        width: 100%;
+        text-align: center;
+        background-image: linear-gradient(to right, var(--color-primary-lightest), var(--color-primary-light));
+        border-radius: $radius-small;
         padding: 1.5rem 2.5rem;
+        margin-bottom: 2rem;
     }
 
     &__line {
+        margin-bottom: 1rem;
         width: 100%;
         height: 1rem;
         position: relative;
         top: -1rem;
-        background-color: var(--color-white-dark);
-        border-radius: $radius-large;
-        margin-bottom: 2rem;
+        background-image: linear-gradient(to right, var(--color-primary-lightest), var(--color-primary-light));
+        border-radius: $radius-large; 
     }
 }

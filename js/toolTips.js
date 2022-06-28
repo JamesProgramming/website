@@ -15,7 +15,7 @@ if (window.innerWidth > respondWidth && !wantsReducedMotion) {
   Array.from(document.getElementsByClassName("has-tool-tip")).forEach((el) => {
     el.addEventListener("mouseover", (e) => {
       // Get position and dimension of element
-      const pos = el.getBoundingClientRect();
+      const currentElementInfo = el.getBoundingClientRect();
       // Get the title attribute text and add it to the tool tip element.
       el.setAttribute("data-title", el.getAttribute("title"));
       span.innerText = el.getAttribute("data-title");
@@ -28,7 +28,7 @@ if (window.innerWidth > respondWidth && !wantsReducedMotion) {
       // Check if tool tip should go on the left side of the element
       // (default is underneath element).
       if (
-        pos.left + spanRect.width / 2 + pos.width / 2 + 20 >
+        currentElementInfo.left + spanRect.width / 2 + currentElementInfo.width / 2 + 20 >
         window.innerWidth
       ) {
         // Wait 1/2 seconds to add tool tip
@@ -36,36 +36,36 @@ if (window.innerWidth > respondWidth && !wantsReducedMotion) {
           span.classList.remove("tool-tip--bottom", "tool-tip--side-right");
           span.classList.add("tool-tip--active", "tool-tip--side-left");
         }, 500);
-        // Position to the left of element
-        span.style.top = `${pos.top - spanRect.height / 2 + pos.height / 2}px`;
-        span.style.left = `${pos.left - spanRect.width}px`;
+        // currentElementInfoition to the left of element
+        span.style.top = `${currentElementInfo.top - spanRect.height / 2 + currentElementInfo.height / 2}px`;
+        span.style.left = `${currentElementInfo.left - spanRect.width}px`;
         return true;
       }
 
       // Check if tooltip will fit on right side of element
-      if (pos.left - spanRect.width / 2 + pos.width / 2 - 20 < 0) {
+      if (currentElementInfo.left - spanRect.width / 2 + currentElementInfo.width / 2 - 20 < 0) {
         timeOut = setTimeout(() => {
           span.classList.remove("tool-tip--bottom", "tool-tip--side-left");
           span.classList.add("tool-tip--active", "tool-tip--side-right");
         }, 500);
-        // Position to the right of element
-        span.style.top = `${pos.top - spanRect.height / 2 + pos.height / 2}px`;
-        span.style.left = `${pos.right}px`;
+        // currentElementInfoition to the right of element
+        span.style.top = `${currentElementInfo.top - spanRect.height / 2 + currentElementInfo.height / 2}px`;
+        span.style.left = `${currentElementInfo.right}px`;
         return true;
       }
 
       // Check if there is not enough room underneath element
-      if (pos.bottom + spanRect.height + 20 > window.innerHeight) {
+      if (currentElementInfo.bottom + spanRect.height + 20 > window.innerHeight) {
         timeOut = setTimeout(() => {
           span.classList.add("tool-tip--active", "tool-tip--bottom");
         }, 500);
-        // Position centered under element
-        span.style.top = `${pos.top - spanRect.height - 9}px`;
-        span.style.left = `${pos.left + pos.width / 2 - spanRect.width / 2}px`;
+        // currentElementInfoition centered under element
+        span.style.top = `${currentElementInfo.top - spanRect.height - 9}px`;
+        span.style.left = `${currentElementInfo.left + currentElementInfo.width / 2 - spanRect.width / 2}px`;
         return true;
       }
 
-      // Default positioning centered under element
+      // Default currentElementInfoitioning centered under element
       timeOut = setTimeout(() => {
         span.classList.remove(
           "tool-tip--side-left",
@@ -75,8 +75,8 @@ if (window.innerWidth > respondWidth && !wantsReducedMotion) {
         span.classList.add("tool-tip--active");
       }, 500);
 
-      span.style.top = `${pos.bottom + 5}px`;
-      span.style.left = `${pos.left + pos.width / 2 - spanRect.width / 2}px`;
+      span.style.top = `${currentElementInfo.bottom + 5}px`;
+      span.style.left = `${currentElementInfo.left + currentElementInfo.width / 2 - spanRect.width / 2}px`;
     });
 
     el.addEventListener("mouseout", (e) => {

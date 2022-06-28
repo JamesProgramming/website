@@ -120,7 +120,7 @@ export class AnimateText {
     });
   }
 
-  // Show text immediately after load for accessiblity
+  // Show text without animation immediately after load for accessiblity
   showAccessibility() {
     let child = this.element.firstElementChild;
 
