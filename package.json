@@ -1,13 +1,15 @@
 {
-  "name": "personal.web.project",
-  "version": "2.0.0",
+  "name": "personal.website",
+  "version": "3.0.0",
   "description": "eportfolio",
   "scripts": {
     "compile:scss": "node-sass --watch sass/main.scss ./style.css",
+    "build:scss": "node-sass sass/main.scss ./style.css",
     "parcel:build": "parcel build index.html",
     "parcel:watch": "parcel watch index.html",
     "server": "cd dist && live-server",
     "start": "npm-run-all --parallel compile:scss parcel:watch server",
+    "build": "npm-run-all build:scss parcel:build",
     "perfix": "postcss --use autoprefix css/style.css -o css/style.perfix.css"
   },
   "author": "James Coolidge",
@@ -34,7 +36,17 @@
     "core-js": "^3.22.4",
     "dotenv": "^16.0.1",
     "express": "^4.18.1",
-    "jquery": "^3.6.0",
-    "jsx-to-html": "^1.1.0"
+    "jquery": "^3.6.0"
+  },
+  "targets": {
+    "modern": {
+      "engines": {
+        "browsers": ">= 0.5%"
+      }
+    }
+  },
+  "engines": {
+    "node": "^16.14.0",
+    "npm": ">=8.3.1"
   }
 }

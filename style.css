@@ -323,6 +323,12 @@ body {
 .button--inline:hover, .button--inline:active {
   color: var(--color-secondary); }
 
+.button--inline::before {
+  content: url("./public/img/svg/inline-link.svg");
+  display: inline-block;
+  text-decoration: underline;
+  padding-right: .5rem; }
+
 .button--gray {
   box-shadow: none;
   display: flex;
@@ -1559,6 +1565,7 @@ body {
     .heading-2 {
       color: transparent;
       background-clip: text;
+      -webkit-background-clip: text;
       background-image: linear-gradient(to right bottom, var(--color-secondary), var(--color-secondary-dark)); } }
 
 .heading-3 {

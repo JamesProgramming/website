@@ -86,7 +86,8 @@ export const canvasLoading = () => {
       }
     },
     clientUpdateSize: function (x, y) {
-      radius = this.spinner.radius;
+      const radius = this.spinner.radius;
+      console.log(radius);
       this.spinner.gradient = [x - radius, y - radius, x + radius, y + radius];
       this.spinnerBackground.x = this.spinner.x = x;
       this.spinnerBackground.y = this.spinner.y = y;

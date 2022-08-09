@@ -31,6 +31,10 @@ export const renderTiles = class {
       );
   }
 
+  /**
+   * Call to load tile
+   * @async
+   */
   async render() {
     return new Promise(async (res, rej) => {
       await new Promise((res, rej) => {

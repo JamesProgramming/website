@@ -95,6 +95,12 @@
         &:hover, &:active {
             color: var(--color-secondary);
         }
+
+        &::before {
+            content: url("./public/img/svg/inline-link.svg");
+            display: inline-block;
+            padding-right: .4rem;
+        }
     }
 
     &--gray {
