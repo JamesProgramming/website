@@ -1,5 +1,6 @@
 // A very simple server
 
+const compression = require("compression");
 const express = require("express");
 const fs = require("fs");
 const path = require("path");
@@ -10,8 +11,10 @@ const education = fs.readFileSync(`${__dirname}/dist/education.html`, "utf-8");
 const contact = fs.readFileSync(`${__dirname}/dist/contact.html`, "utf-8");
 const fourOfour = fs.readFileSync(`${__dirname}/dist/404.html`, "utf-8");
 
+app.use(compression());
+
 app.use(express.static(path.join(__dirname, "dist")));
-app.use(express.static(path.join(__dirname, "images")));
+app.use(express.static(path.join(__dirname, "public")));
 
 app.get("/", (req, res, next) => {
   res.status(200).send(home);
@@ -28,7 +31,5 @@ app.get("/contact", (req, res, next) => {
 app.all("*", (req, res, next) => {
   res.status(404).send(fourOfour);
 });
-
-
 
 module.exports = app;

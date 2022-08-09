@@ -1,5 +1,5 @@
 /**
- * @author James J. Coolidge <jamesjcoolidge.space>
+ * @author James J. Coolidge <jamesjcoolidge.com>
  * @class
  */
 

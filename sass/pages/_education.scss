@@ -14,11 +14,13 @@
     }
 
     &__container {
+        position: relative;
         margin-top: 5rem;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-column-gap: 5rem;
+        grid-gap: 7rem 5rem;
         grid-column: first-col / third-col;
+        min-height: 20rem;
 
         @include respond($large) {
             grid-column: 1 / -1;

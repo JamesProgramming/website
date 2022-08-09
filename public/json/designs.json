@@ -1,0 +1,42 @@
+{
+    "data": {
+        "tiles": [
+            {
+                "img": "img/resume-design-show",
+                "alt": "image of an entry level resume",
+                "name": "Entry level resume",
+                "notes": [
+                    "Built on <a href='https://icons8.com/lunacy' class='button--inline'>Lunacy</a> Designing Tool"
+                ],
+                "tags": [
+                    "designer"
+                ],
+                "viewImages": "/img/resume-design.svg"
+            },
+            {
+                "img": "img/business-card-front-design-show",
+                "alt": "image of a business card",
+                "name": "Business card",
+                "notes": [
+                    "Built on <a href='https://icons8.com/lunacy' class='button--inline'>Lunacy</a> Designing Tool"
+                ],
+                "tags": [
+                    "designer"
+                ],
+                "viewImages": "/img/business-card-front-design.png,/img/business-card-back-design.png"
+            },
+            {
+                "img": "img/house-front-design-show",
+                "alt": "image of an house flyer",
+                "name": "House flyer",
+                "notes": [
+                    "Designed on <a href='https://canva.com' class='button--inline'>canva.com</a>"
+                ],
+                "tags": [
+                    "designer"
+                ],
+                "viewImages": "/img/house-front-design.png,/img/house-back-design.png"
+            }
+        ]
+    }
+}

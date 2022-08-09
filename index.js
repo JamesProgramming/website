@@ -6,10 +6,10 @@ import $ from "jquery";
 import { body, wantsReducedMotion, respondWidth } from "./js/variables";
 import "./js/previewer";
 import "./js/toolTips";
+import { renderTiles } from "./js/tiles";
 
 // Window properties
 let innerWidth = window.innerWidth;
-
 
 // console.log(new TextEncoder().encode(body));
 
@@ -17,12 +17,6 @@ let innerWidth = window.innerWidth;
 // crypto.subtle.digest('SHA-256', new TextEncoder().encode(body)).then((hashMessage) => {
 //   console.log(new String(hashMessage));
 // });
-
-
-
-
-
-
 
 // navigation
 const navigation = document.getElementsByClassName("navigation")[0];
@@ -66,24 +60,26 @@ if (toTopArrow) {
 }
 
 // Design previewer
-$(".in-site").on("click", function () {
-  $(".previewer").addClass("previewer--active");
-  $(".previewer__zoomer").html("");
-  $(this)
-    .data("src")
-    .split(",")
-    .forEach((src) => {
-      $(".previewer__zoomer").append(
-        `<img src=${src} alt=${src} class="previewer__img" />`
-      );
-    });
-  $("body").css("overflow", "hidden");
-});
+const inSitePreviewer = () => {
+  $(".in-site").on("click", function () {
+    $(".previewer").addClass("previewer--active");
+    $(".previewer__zoomer").html("");
+    $(this)
+      .data("src")
+      .split(",")
+      .forEach((src) => {
+        $(".previewer__zoomer").append(
+          `<img src=${src} alt=${src} class="previewer__img" />`
+        );
+      });
+    $("body").css("overflow", "hidden");
+  });
 
-$(".previewer__close").on("click", function () {
-  $(".previewer").removeClass("previewer--active");
-  $("body").css("overflow", "");
-});
+  $(".previewer__close").on("click", function () {
+    $(".previewer").removeClass("previewer--active");
+    $("body").css("overflow", "");
+  });
+};
 
 // Hide all custom tooltips
 const toolTipHide = () => {
@@ -151,8 +147,9 @@ const phoneNavViewChange = () => {
 
 // Listen for click on hamburger menu on phone
 if (hamburgerMenu) {
-  phoneCover.addEventListener("touchstart", phoneNavViewChange);
-  //hamburgerMenu.addEventListener("touchmove", phoneNavViewChange);
+  phoneCover.addEventListener("touchstart", phoneNavViewChange, {
+    passive: true,
+  });
   phoneCover.addEventListener("click", phoneNavViewChange);
   hamburgerMenu.addEventListener("click", phoneNavViewChange);
   hamburgerMenu.blur();
@@ -266,6 +263,20 @@ $("button.map__button").on("click", function () {
   $(".map").removeClass("map--active");
 });
 
+// Education Page degrees & websites & designs
+(async () => {
+  if (window.location.pathname !== "/education") return false;
+  new renderTiles(
+    "/json/degrees.json",
+    ".edu-tiles__container",
+    "educationTile"
+  ).render();
+  new renderTiles("/json/websites.json", "#front-end .tiles").render();
+  await new renderTiles("/json/designs.json", "#designing .tiles").render();
+
+  inSitePreviewer();
+})();
+
 // Contact page email popup
 $("#internet-contact").on("click", function (e) {
   e.preventDefault();
@@ -304,12 +315,12 @@ if (!wantsReducedMotion) {
     "footer__svg--active"
   ).observation();
 } else {
-  if (document.querySelector(".header__container")) 
-  new AnimateText(".header__container", {
-    write: 100,
-    startPause: 100,
-    endPause: 3000,
-  }).showAccessibility();
+  if (document.querySelector(".header__container"))
+    new AnimateText(".header__container", {
+      write: 100,
+      startPause: 100,
+      endPause: 3000,
+    }).showAccessibility();
   new AnimateInView(
     ".cards__card > svg",
     "cards__svg--active"

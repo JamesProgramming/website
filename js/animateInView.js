@@ -1,6 +1,6 @@
 /**
  * Animate element when coming into view
- * @author James J. Coolidge <jamesjcoolidge.space>
+ * @author James J. Coolidge <jamesjcoolidge.com>
  */
 export const AnimateInView = class {
   /**

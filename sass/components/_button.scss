@@ -37,7 +37,7 @@
         transform: scale(1.03);
     }
     
-    &:active, &:focus {
+    &:active {
         transform: scale(0.98);
         outline: none;
     }
