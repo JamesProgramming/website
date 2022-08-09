@@ -10,6 +10,7 @@ export const renderTiles = class {
    * Fetch and render tiles
    * @param {string} dataFromUrl - Url of json data
    * @param {string} locationQuery - CSS selector string to query location on page to add tiles
+   * @param {string} type - Tile type to be loaded. Either a 'tile' or a 'educationTile'
    */
   constructor(dataFromUrl, locationQuery, type = "tile") {
     this.type = type;

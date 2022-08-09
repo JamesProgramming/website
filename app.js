@@ -6,10 +6,24 @@ const fs = require("fs");
 const path = require("path");
 const app = express();
 
-const home = fs.readFileSync(`${__dirname}/dist/index.html`, "utf-8");
-const education = fs.readFileSync(`${__dirname}/dist/education.html`, "utf-8");
-const contact = fs.readFileSync(`${__dirname}/dist/contact.html`, "utf-8");
-const fourOfour = fs.readFileSync(`${__dirname}/dist/404.html`, "utf-8");
+const replaceURL = (file) => {
+  if (false)
+    return file.replaceAll(/https:\/\/jamescoolidge.com/g, "http://localhost");
+  return file;
+};
+
+const home = replaceURL(
+  fs.readFileSync(`${__dirname}/dist/index.html`, "utf-8")
+);
+const education = replaceURL(
+  fs.readFileSync(`${__dirname}/dist/education.html`, "utf-8")
+);
+const contact = replaceURL(
+  fs.readFileSync(`${__dirname}/dist/contact.html`, "utf-8")
+);
+const fourOfour = replaceURL(
+  fs.readFileSync(`${__dirname}/dist/404.html`, "utf-8")
+);
 
 app.use(compression());
 

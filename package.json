@@ -8,7 +8,8 @@
     "parcel:build": "parcel build index.html",
     "parcel:watch": "parcel watch index.html",
     "server": "cd dist && live-server",
-    "start": "npm-run-all --parallel compile:scss parcel:watch server",
+    "start:dev": "npm-run-all --parallel compile:scss parcel:watch server",
+    "start": "node ./server.js",
     "build": "npm-run-all build:scss parcel:build",
     "perfix": "postcss --use autoprefix css/style.css -o css/style.perfix.css"
   },
