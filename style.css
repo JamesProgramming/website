@@ -324,7 +324,7 @@ body {
   color: var(--color-secondary); }
 
 .button--inline::before {
-  content: url("https://jamescoolidge.com/public/img/svg/inline-link.svg");
+  content: url("https://jamescoolidge.com/img/svg/inline-link.svg");
   display: inline-block;
   padding-right: .4rem; }
 
@@ -448,9 +448,11 @@ body {
 .button--outline {
   background-color: transparent;
   color: var(--color-black-light);
-  border: solid 0.3rem var(--color-gray);
+  outline: solid 0.3rem var(--color-gray);
+  outline-offset: -.25rem;
   box-shadow: none;
-  padding: 1rem 2rem; }
+  padding-left: 2rem;
+  padding-right: 2rem; }
   .button--outline::after, .button--outline::before {
     display: none; }
   .button--outline:hover {
@@ -876,7 +878,7 @@ body {
     position: relative;
     z-index: 10;
     overflow: hidden;
-    border-radius: 0.9rem; }
+    border-radius: 0.9rem 0.9rem 0 0; }
     .tiles__img img {
       width: 100%;
       filter: brightness(70%); }
@@ -916,7 +918,7 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
   align-items: start;
   grid-gap: 4rem; }
-  @media only screen and (max-width: 34.375em) {
+  @media only screen and (max-width: 29em) {
     .wide-tiles {
       grid-template-columns: repeat(auto-fit, minmax(29rem, 1fr)); } }
   .wide-tiles__container {
@@ -977,11 +979,17 @@ body {
       grid-template-rows: 20rem;
       grid-auto-rows: 0;
       overflow: hidden;
-      background-color: var(--color-white); }
+      background-color: var(--color-white);
+      position: relative; }
       .wide-tiles__sub-tile:not(:last-child) {
         margin-bottom: 2rem; }
+      @media only screen and (max-width: 34.375em) {
+        .wide-tiles__sub-tile {
+          grid-template-columns: [col-1] 1rem [col-2] 2fr [col-3] 4fr [col-4];
+          overflow: hidden;
+          grid-template-rows: 23rem; } }
     .wide-tiles__sub-line {
-      height: 20rem;
+      height: 23rem;
       width: 1rem;
       background-color: var(--color-gray); }
     .wide-tiles__sub-img {
@@ -991,11 +999,21 @@ body {
       display: block;
       overflow: hidden;
       border-radius: 0.9rem; }
+      @media only screen and (max-width: 34.375em) {
+        .wide-tiles__sub-img {
+          overflow: visible;
+          margin: 0; } }
       .wide-tiles__sub-img img {
         width: 100%;
-        filter: blur(0.3rem) brightness(70%); }
+        filter: blur(0.2rem) brightness(70%); }
         .body--dark-mode .wide-tiles__sub-img img {
-          filter: blur(0.4rem) brightness(110%); }
+          filter: blur(0.2rem) brightness(110%); }
+        @media only screen and (max-width: 34.375em) {
+          .wide-tiles__sub-img img {
+            border-radius: 0 50rem 50rem 0;
+            position: absolute;
+            right: 65%;
+            top: -5%; } }
     .wide-tiles__sub-heading {
       position: relative;
       grid-column: col-2 / col-3;
@@ -1016,6 +1034,9 @@ body {
       display: flex;
       flex-direction: column;
       justify-content: space-between; }
+      @media only screen and (max-width: 34.375em) {
+        .wide-tiles__sub-description {
+          padding-left: .8rem; } }
       .wide-tiles__sub-description h6 {
         padding-bottom: 1rem; }
 
@@ -1589,7 +1610,7 @@ body {
   font-size: 2rem;
   font-family: "Dosis", sans-serif;
   font-weight: 700;
-  color: var(--color-white-dark);
+  color: var(--color-white);
   text-transform: uppercase;
   letter-spacing: .2rem; }
 

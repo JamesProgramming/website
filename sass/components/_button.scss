@@ -278,9 +278,11 @@
     &--outline {
         background-color: transparent;
         color: var(--color-black-light);
-        border: solid .3rem var(--color-gray);
+        outline: solid .3rem var(--color-gray);
+        outline-offset: -.25rem;
         box-shadow: none;
-        padding: 1rem 2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
 
         &::after, &::before {
             display: none;

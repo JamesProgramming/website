@@ -43,7 +43,7 @@
         position: relative;
         z-index: 10;
         overflow: hidden;
-        border-radius: $radius-small;
+        border-radius: $radius-small $radius-small 0 0;
         
         & img {
             width: 100%;
