@@ -11,12 +11,6 @@ import { renderTiles } from "./js/tiles";
 // Window properties
 let innerWidth = window.innerWidth;
 
-// console.log(new TextEncoder().encode(body));
-
-// indexedDB.open('Hashes', 1);
-// crypto.subtle.digest('SHA-256', new TextEncoder().encode(body)).then((hashMessage) => {
-//   console.log(new String(hashMessage));
-// });
 
 // navigation
 const navigation = document.getElementsByClassName("navigation")[0];
@@ -254,7 +248,7 @@ $("#map").on("click", function (e) {
   e.preventDefault();
   $(".map iframe").attr(
     "src",
-    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d345967.06803882046!2d-123.25882165682371!3d47.35598050156522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5491d0c45198e82d%3A0x41f1d9fc4177d646!2sMason%20County%2C%20WA!5e0!3m2!1sen!2sus!4v1647728336739!5m2!1sen!2sus"
+    "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d201154.74319286767!2d-84.38526504064279!3d38.02278021501356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1680198555496!5m2!1sen!2sus"
   );
   $(".map").addClass("map--active");
 });
