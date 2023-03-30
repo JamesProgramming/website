@@ -2,6 +2,7 @@
 
 const compression = require("compression");
 const express = require("express");
+const { redirectToHTTPS } = require("express-http-to-https");
 const fs = require("fs");
 const path = require("path");
 const app = express();
@@ -25,7 +26,9 @@ const fourOfour = replaceURL(
   fs.readFileSync(`${__dirname}/dist/404.html`, "utf-8")
 );
 
+
 app.use(compression());
+app.use(redirectToHTTPS());
 
 app.use(express.static(path.join(__dirname, "dist")));
 app.use(express.static(path.join(__dirname, "public")));
