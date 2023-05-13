@@ -1,27 +1,25 @@
 {
-    "data": {
-        "tiles": [
-            {
-                "inProgress": false,
-                "name": "ASSOCATE OF ART",
-                "college": "Olympic College",
-                "location": "BREMERTON, WA",
-                "date": "2019 &RightArrow; 2021",
-                "notes": [
-                    "Focused my studies on Web development and mathematics",
-                    "Degree honors: President's Scholler"
-                ]
-            },
-            {
-                "inProgress": true,
-                "name": "BS IN COMPUTER SCIENCE",
-                "college": "Western Governors University",
-                "location": "SAIT LAKE CITY , UT",
-                "date": "2021 &RightArrow; Now",
-                "notes": [
-                    "Anticipating graduation in the spring of 2023"
-                ]
-            }
+  "data": {
+    "tiles": [
+      {
+        "inProgress": false,
+        "name": "ASSOCIATE OF ARTS",
+        "college": "Olympic College",
+        "location": "BREMERTON, WA",
+        "date": "2019 &RightArrow; 2021",
+        "notes": [
+          "Focused my studies on Web development and mathematics.",
+          "Degree honors: President's Scholler."
         ]
-    }
+      },
+      {
+        "inProgress": true,
+        "name": "BS IN COMPUTER SCIENCE",
+        "college": "Western Governors University",
+        "location": "SAIT LAKE CITY , UT",
+        "date": "2021 &RightArrow; Now",
+        "notes": ["Anticipating graduation in the spring of 2023."]
+      }
+    ]
+  }
 }

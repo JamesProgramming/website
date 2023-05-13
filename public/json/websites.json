@@ -1,51 +1,42 @@
 {
-    "data": {
-        "tiles": [
-            {
-                "img": "img/analysis-frenzy",
-                "alt": "Analysis Frenzy webpage",
-                "name": "Analysis Frenzy",
-                "notes": [
-                    "Built to be compatible with nearly 100% of all browser in use today",
-                    "Personal Project"
-                ],
-                "tags": [
-                    "designer",
-                    "Developer"
-                ],
-                "sourceCodeUrl": "https://github.com/JamesProgramming/analysis-frenzy",
-                "href": "https://jamesprogramming.github.io/analysis-frenzy/dist"
-            },
-            {
-                "img": "img/american-pizza",
-                "alt": "American Pizza front page",
-                "name": "American Pizza",
-                "notes": [
-                    "College team website project",
-                    "Some pages require PHP (which is not running on the hosting server)"
-                ],
-                "tags": [
-                    "designer",
-                    "co-developer"
-                ],
-                "sourceCodeUrl": "https://github.com/flowxyno/CIS-255-Blue-Team",
-                "href": "https://american-pizza.netlify.app/"
-            },
-            {
-                "img": "img/college-web-course-work",
-                "alt": "College Course Work webpage",
-                "name": "College Course Work",
-                "notes": [
-                    "Page holds college course work from a Web Development class",
-                    "Best viewed on a desktop"
-                ],
-                "tags": [
-                    "designer",
-                    "developer"
-                ],
-                "sourceCodeUrl": "https://github.com/JamesProgramming/web-development-class-work",
-                "href": "https://jamesprogramming.github.io/web-development-class-work/"
-            }
-        ]
-    }
+  "data": {
+    "tiles": [
+      {
+        "img": "img/analysis-frenzy",
+        "alt": "Analysis Frenzy webpage",
+        "name": "Analysis Frenzy",
+        "notes": [
+          "Built to be compatible with nearly 100% of all browsers in use today",
+          "Personal Project"
+        ],
+        "tags": ["designer", "Developer"],
+        "sourceCodeUrl": "https://github.com/JamesProgramming/analysis-frenzy",
+        "href": "https://jamesprogramming.github.io/analysis-frenzy/dist"
+      },
+      {
+        "img": "img/american-pizza",
+        "alt": "American Pizza front page",
+        "name": "American Pizza",
+        "notes": [
+          "College team website project",
+          "Some pages require PHP (which is not running on the hosting server)"
+        ],
+        "tags": ["designer", "co-developer"],
+        "sourceCodeUrl": "https://github.com/flowxyno/CIS-255-Blue-Team",
+        "href": "https://american-pizza.netlify.app/"
+      },
+      {
+        "img": "img/college-web-course-work",
+        "alt": "College Course Work webpage",
+        "name": "College Course Work",
+        "notes": [
+          "Page holds college course work from a Web Development class",
+          "Best viewed on a desktop"
+        ],
+        "tags": ["designer", "developer"],
+        "sourceCodeUrl": "https://github.com/JamesProgramming/web-development-class-work",
+        "href": "https://jamesprogramming.github.io/web-development-class-work/"
+      }
+    ]
+  }
 }
