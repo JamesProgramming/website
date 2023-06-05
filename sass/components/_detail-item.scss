@@ -1,89 +1,85 @@
 .detail-item {
-    &__item {
-        display: grid;
-        grid-template-columns: 3.3rem 1fr;
-        justify-content: start;
-        justify-self: start;
-        align-self: start;
-        align-items: center;
-        border-radius: $radius-small;
-        color: var(--color-black);
-        background-color: var(--color-white);
-        font-size: 1.8rem;
-        font-family: $reading-font;
-        margin: .5rem 0;
-        padding: 1.2rem;
-        padding-left: 2rem;
-        padding-right: 0;
+  &__item {
+    display: grid;
+    grid-template-columns: 3.3rem 1fr;
+    justify-content: start;
+    justify-self: start;
+    align-self: start;
+    align-items: center;
+    border-radius: $radius-small;
+    color: var(--color-black);
+    background-color: var(--color-white);
+    font-size: 1.8rem;
+    font-family: $reading-font;
+    margin: 0.5rem 0;
+    padding: 1.2rem;
+    padding-left: 2rem;
+    padding-right: 0;
 
-        & svg {
-            display: block;
-            height: 3.3rem;
-            width: 3.3rem;
-            color: var(--color-primary);
-            filter: drop-shadow(0 0 .1rem var(--color-pure-white));
-        }
-
-        & > *:nth-child(2) {
-            margin: 0 4rem 0 4.1rem;
-        }
-
-        & ul {
-            padding-left: 1.5rem;
-            list-style-image: url('https://jamescoolidge.com/img/svg/list-svg.svg');
-            line-height: 1.5;
-            font-size: 1.6rem;
-            flex: 1 1 50%;
-    
-            & li:not(:last-child) {
-                padding-bottom: 1rem;
-            }
-        }
+    & svg {
+      display: block;
+      height: 3.3rem;
+      width: 3.3rem;
+      color: var(--color-primary);
+      filter: drop-shadow(0 0 0.1rem var(--color-pure-white));
     }
 
-    &--info { 
-            grid-template-columns: 3.3rem max-content;
-            & > *:nth-child(3) {
-                margin: 0 3.9rem 0 4.1rem;
-            }
-
-            & > *:nth-child(2) {
-                font-size: 1.4rem;
-                letter-spacing: .05rem;
-                font-weight: 700;
-                font-family: $reading-font;
-                text-transform: uppercase;
-                margin: 0 2.3rem 0 .8rem;
-                word-break: none;
-            }
-
+    & > *:nth-child(2) {
+      margin: 0 4rem 0 4.1rem;
     }
 
-    &--icon-compact {
-        & svg {
-            height: 2.5rem;
-            width: 2.5rem;
-        }
+    & ul {
+      padding-left: 1.5rem;
+      list-style-image: url("/img/svg/list-svg.svg");
+      line-height: 1.5;
+      font-size: 1.6rem;
+      flex: 1 1 50%;
+
+      & li:not(:last-child) {
+        padding-bottom: 1rem;
+      }
+    }
+  }
+
+  &--info {
+    grid-template-columns: 3.3rem max-content;
+    & > *:nth-child(3) {
+      margin: 0 3.9rem 0 4.1rem;
     }
 
-    &--compact {
+    & > *:nth-child(2) {
+      font-size: 1.4rem;
+      letter-spacing: 0.05rem;
+      font-weight: 700;
+      font-family: $reading-font;
+      text-transform: uppercase;
+      margin: 0 2.3rem 0 0.8rem;
+      word-break: none;
+    }
+  }
 
-            margin: .3rem 0;
-            padding: .9rem;
-            padding-left: 2rem;
-            padding-right: 0;
-    
-            & svg {
-                height: 2.5rem;
-                width: 2.5rem;
-            }
-    
-            & ul {
-        
-                & li:not(:last-child) {
-                    padding-bottom: .8rem;
-                }
-            }
+  &--icon-compact {
+    & svg {
+      height: 2.5rem;
+      width: 2.5rem;
+    }
+  }
+
+  &--compact {
+    margin: 0.3rem 0;
+    padding: 0.9rem;
+    padding-left: 2rem;
+    padding-right: 0;
+
+    & svg {
+      height: 2.5rem;
+      width: 2.5rem;
     }
 
+    & ul {
+      & li:not(:last-child) {
+        padding-bottom: 0.8rem;
+      }
+    }
+  }
 }

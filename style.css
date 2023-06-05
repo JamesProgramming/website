@@ -253,13 +253,13 @@ body {
   margin-top: auto;
   margin-left: 5rem;
   margin-right: 5rem;
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
   font-family: "Dosis", sans-serif;
   box-shadow: var(--shadow-light);
   font-weight: 700;
   font-size: 2.2rem;
   color: var(--color-black);
-  transition: all .2s;
+  transition: all 0.2s;
   align-self: stretch;
   z-index: 20; }
   .button > * {
@@ -289,7 +289,7 @@ body {
   right: calc(50% - 3.5rem);
   opacity: 0;
   transform: scale(1);
-  transition: all .2s; }
+  transition: all 0.2s; }
 
 .button::after {
   content: "";
@@ -299,7 +299,7 @@ body {
   right: -110%;
   top: -150%;
   border-radius: 50%;
-  transition: all .4s;
+  transition: all 0.4s;
   height: 370%;
   width: 110%; }
 
@@ -324,9 +324,9 @@ body {
   color: var(--color-secondary); }
 
 .button--inline::before {
-  content: url("https://jamescoolidge.com/img/svg/inline-link.svg");
+  content: url("/img/svg/inline-link.svg");
   display: inline-block;
-  padding-right: .4rem; }
+  padding-right: 0.4rem; }
 
 .button--gray {
   box-shadow: none;
@@ -371,7 +371,7 @@ body {
   .button--down-arrow > *:not(svg) {
     padding: 0 1rem; }
   .button--down-arrow svg {
-    transition: all .2s;
+    transition: all 0.2s;
     position: relative;
     z-index: 200;
     width: 3rem;
@@ -382,7 +382,7 @@ body {
 
 .button--right-arrow {
   display: grid;
-  grid-column-gap: .7rem;
+  grid-column-gap: 0.7rem;
   justify-content: center;
   align-items: center;
   grid-template-columns: repeat(2, max-content);
@@ -392,7 +392,7 @@ body {
     justify-self: center;
     display: inline-block;
     align-self: center;
-    transition: all .2s;
+    transition: all 0.2s;
     position: relative;
     z-index: 200;
     width: 3rem;
@@ -421,11 +421,11 @@ body {
   font-size: 1.8rem; }
   .button--underline span {
     display: block;
-    height: .5rem;
+    height: 0.5rem;
     width: 100%;
-    margin-top: .3rem;
+    margin-top: 0.3rem;
     background-color: var(--color-gray);
-    transition: all .2s;
+    transition: all 0.2s;
     border-radius: 2.7rem; }
   .button--underline::before, .button--underline::after {
     display: none; }
@@ -436,7 +436,7 @@ body {
 
 .button--plus {
   display: flex;
-  padding: .8rem 2rem;
+  padding: 0.8rem 2rem;
   align-items: center;
   font-size: 1.8rem; }
   .button--plus span {
@@ -449,7 +449,7 @@ body {
   background-color: transparent;
   color: var(--color-black-light);
   outline: solid 0.3rem var(--color-gray);
-  outline-offset: -.25rem;
+  outline-offset: -0.25rem;
   box-shadow: none;
   padding-left: 2rem;
   padding-right: 2rem; }
@@ -470,7 +470,7 @@ body {
 
 .button--hidden {
   cursor: not-allowed;
-  opacity: .3;
+  opacity: 0.3;
   visibility: hidden; }
   .button--hidden:hover {
     transform: none; }
@@ -723,7 +723,7 @@ body {
   background-color: var(--color-white);
   font-size: 1.8rem;
   font-family: "Open Sans", sans-serif;
-  margin: .5rem 0;
+  margin: 0.5rem 0;
   padding: 1.2rem;
   padding-left: 2rem;
   padding-right: 0; }
@@ -737,7 +737,7 @@ body {
     margin: 0 4rem 0 4.1rem; }
   .detail-item__item ul {
     padding-left: 1.5rem;
-    list-style-image: url("https://jamescoolidge.com/img/svg/list-svg.svg");
+    list-style-image: url("/img/svg/list-svg.svg");
     line-height: 1.5;
     font-size: 1.6rem;
     flex: 1 1 50%; }
@@ -750,11 +750,11 @@ body {
     margin: 0 3.9rem 0 4.1rem; }
   .detail-item--info > *:nth-child(2) {
     font-size: 1.4rem;
-    letter-spacing: .05rem;
+    letter-spacing: 0.05rem;
     font-weight: 700;
     font-family: "Open Sans", sans-serif;
     text-transform: uppercase;
-    margin: 0 2.3rem 0 .8rem;
+    margin: 0 2.3rem 0 0.8rem;
     word-break: none; }
 
 .detail-item--icon-compact svg {
@@ -762,15 +762,15 @@ body {
   width: 2.5rem; }
 
 .detail-item--compact {
-  margin: .3rem 0;
-  padding: .9rem;
+  margin: 0.3rem 0;
+  padding: 0.9rem;
   padding-left: 2rem;
   padding-right: 0; }
   .detail-item--compact svg {
     height: 2.5rem;
     width: 2.5rem; }
   .detail-item--compact ul li:not(:last-child) {
-    padding-bottom: .8rem; }
+    padding-bottom: 0.8rem; }
 
 .loading {
   position: absolute;

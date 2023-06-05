@@ -1,5 +1,3 @@
-import "core-js/stable";
-import "regenerator-runtime/runtime";
 import { AnimateText } from "./js/animateText";
 import { AnimateInView } from "./js/animateInView";
 import $ from "jquery";
@@ -10,7 +8,6 @@ import { renderTiles } from "./js/tiles";
 
 // Window properties
 let innerWidth = window.innerWidth;
-
 
 // navigation
 const navigation = document.getElementsByClassName("navigation")[0];
